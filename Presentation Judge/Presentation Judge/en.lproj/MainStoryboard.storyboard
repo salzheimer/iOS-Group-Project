@@ -1,24 +1,141 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Jrl-dt-EzT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="hoc-a9-Pak">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="Rlx-Vj-4dS">
+        <scene sceneID="jvG-Bi-PNp">
             <objects>
-                <viewController id="Jrl-dt-EzT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AIf-t1-1hV">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                <viewController id="BMf-QZ-yQU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="esl-Qm-jIS">
+                        <rect key="frame" x="0.0" y="20" width="703" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9K-wG-giJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="pcd-cb-FV6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Load Assigned Presentations">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P19-ik-z7u">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="445" id="Eip-Ac-6RR"/>
+                                    <constraint firstAttribute="height" constant="74" id="l4e-Yf-Dxc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Test">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P19-ik-z7u" firstAttribute="top" secondItem="esl-Qm-jIS" secondAttribute="top" constant="252" id="43Z-AE-pac"/>
+                            <constraint firstItem="F9K-wG-giJ" firstAttribute="trailing" secondItem="P19-ik-z7u" secondAttribute="trailing" type="default" id="GLM-Sn-gAy"/>
+                            <constraint firstItem="F9K-wG-giJ" firstAttribute="top" secondItem="esl-Qm-jIS" secondAttribute="top" constant="430" id="MuH-qO-Cga"/>
+                            <constraint firstItem="F9K-wG-giJ" firstAttribute="centerX" secondItem="esl-Qm-jIS" secondAttribute="centerX" type="default" id="Y4n-IU-6H9"/>
+                            <constraint firstItem="F9K-wG-giJ" firstAttribute="leading" secondItem="P19-ik-z7u" secondAttribute="leading" type="default" id="sqR-Ak-ct3"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <toolbarItems/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P9h-w4-P9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dP4-QW-nME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="-394"/>
+            <point key="canvasLocation" x="1255" y="-272"/>
+        </scene>
+        <!--Table View Controller - Assigned Presentations-->
+        <scene sceneID="aER-Qo-ScO">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="TX5-w4-zaV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Nqd-KR-3Qo">
+                        <rect key="frame" x="0.0" y="64" width="320" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Presentations" textLabel="5Oj-u6-ePp" detailTextLabel="1X2-c8-Sy1" style="IBUITableViewCellStyleSubtitle" id="Ck3-Dn-PvW">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Presentation 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Oj-u6-ePp">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="How to Blow Your Nose" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X2-c8-Sy1">
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TX5-w4-zaV" id="oA3-ed-gmt"/>
+                            <outlet property="delegate" destination="TX5-w4-zaV" id="IkR-56-2gU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Assigned Presentations" id="Avv-mt-HI0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AD6-Wy-YaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="-1328"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JNF-5T-MVq">
+            <objects>
+                <navigationController id="SgP-Xe-OuT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="JDB-Uz-quN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TX5-w4-zaV" kind="relationship" relationship="rootViewController" id="7LU-Dn-h7t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44U-1e-9oG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="-1331"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="31h-nP-e8R">
+            <objects>
+                <splitViewController id="hoc-a9-Pak" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="EmB-4k-hZE"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="SgP-Xe-OuT" kind="relationship" relationship="masterViewController" id="NsV-cN-jgz"/>
+                        <segue destination="BMf-QZ-yQU" kind="relationship" relationship="detailViewController" id="bHK-or-zjw"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UsO-RR-fTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="-846"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -7,102 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F26D4304171073CB0096AE04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26D4303171073CB0096AE04 /* UIKit.framework */; };
-		F26D4306171073CB0096AE04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26D4305171073CB0096AE04 /* Foundation.framework */; };
-		F26D4308171073CB0096AE04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26D4307171073CB0096AE04 /* CoreGraphics.framework */; };
-		F26D430E171073CB0096AE04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F26D430C171073CB0096AE04 /* InfoPlist.strings */; };
-		F26D4310171073CB0096AE04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F26D430F171073CB0096AE04 /* main.m */; };
-		F26D4314171073CB0096AE04 /* pageAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F26D4313171073CB0096AE04 /* pageAppAppDelegate.m */; };
-		F26D4316171073CB0096AE04 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F26D4315171073CB0096AE04 /* Default.png */; };
-		F26D4318171073CB0096AE04 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F26D4317171073CB0096AE04 /* Default@2x.png */; };
-		F26D431A171073CB0096AE04 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F26D4319171073CB0096AE04 /* Default-568h@2x.png */; };
-		F26D431D171073CB0096AE04 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F26D431B171073CB0096AE04 /* MainStoryboard.storyboard */; };
-		F26D4320171073CB0096AE04 /* pageAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26D431F171073CB0096AE04 /* pageAppViewController.m */; };
+		F2BDF9E41710F1BB00902929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E31710F1BB00902929 /* UIKit.framework */; };
+		F2BDF9E61710F1BB00902929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E51710F1BB00902929 /* Foundation.framework */; };
+		F2BDF9E81710F1BB00902929 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E71710F1BB00902929 /* CoreGraphics.framework */; };
+		F2BDF9EE1710F1BB00902929 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2BDF9EC1710F1BB00902929 /* InfoPlist.strings */; };
+		F2BDF9F01710F1BB00902929 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDF9EF1710F1BB00902929 /* main.m */; };
+		F2BDF9F41710F1BB00902929 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDF9F31710F1BB00902929 /* AppDelegate.m */; };
+		F2BDF9F61710F1BB00902929 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BDF9F51710F1BB00902929 /* Default.png */; };
+		F2BDF9F81710F1BB00902929 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BDF9F71710F1BB00902929 /* Default@2x.png */; };
+		F2BDF9FA1710F1BB00902929 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BDF9F91710F1BB00902929 /* Default-568h@2x.png */; };
+		F2BDF9FD1710F1BB00902929 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BDF9FB1710F1BB00902929 /* MainStoryboard.storyboard */; };
+		F2BDFA001710F1BB00902929 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDF9FF1710F1BB00902929 /* ViewController.m */; };
+		F2BDFA0B1710F20700902929 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDFA0A1710F20700902929 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F26D4300171073CB0096AE04 /* Presentation Judge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Presentation Judge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F26D4303171073CB0096AE04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F26D4305171073CB0096AE04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F26D4307171073CB0096AE04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F26D430B171073CB0096AE04 /* Presentation Judge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Presentation Judge-Info.plist"; sourceTree = "<group>"; };
-		F26D430D171073CB0096AE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F26D430F171073CB0096AE04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F26D4311171073CB0096AE04 /* Presentation Judge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Presentation Judge-Prefix.pch"; sourceTree = "<group>"; };
-		F26D4312171073CB0096AE04 /* pageAppAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pageAppAppDelegate.h; sourceTree = "<group>"; };
-		F26D4313171073CB0096AE04 /* pageAppAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pageAppAppDelegate.m; sourceTree = "<group>"; };
-		F26D4315171073CB0096AE04 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		F26D4317171073CB0096AE04 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		F26D4319171073CB0096AE04 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F26D431C171073CB0096AE04 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F26D431E171073CB0096AE04 /* pageAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pageAppViewController.h; sourceTree = "<group>"; };
-		F26D431F171073CB0096AE04 /* pageAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pageAppViewController.m; sourceTree = "<group>"; };
+		F2BDF9E01710F1BB00902929 /* Presentation Judge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Presentation Judge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BDF9E31710F1BB00902929 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F2BDF9E51710F1BB00902929 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F2BDF9E71710F1BB00902929 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F2BDF9EB1710F1BB00902929 /* Presentation Judge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Presentation Judge-Info.plist"; sourceTree = "<group>"; };
+		F2BDF9ED1710F1BB00902929 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2BDF9EF1710F1BB00902929 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2BDF9F11710F1BB00902929 /* Presentation Judge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Presentation Judge-Prefix.pch"; sourceTree = "<group>"; };
+		F2BDF9F21710F1BB00902929 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2BDF9F31710F1BB00902929 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2BDF9F51710F1BB00902929 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F2BDF9F71710F1BB00902929 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F2BDF9F91710F1BB00902929 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F2BDF9FC1710F1BB00902929 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F2BDF9FE1710F1BB00902929 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2BDF9FF1710F1BB00902929 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2BDFA091710F20700902929 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		F2BDFA0A1710F20700902929 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F26D42FD171073CB0096AE04 /* Frameworks */ = {
+		F2BDF9DD1710F1BB00902929 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26D4304171073CB0096AE04 /* UIKit.framework in Frameworks */,
-				F26D4306171073CB0096AE04 /* Foundation.framework in Frameworks */,
-				F26D4308171073CB0096AE04 /* CoreGraphics.framework in Frameworks */,
+				F2BDF9E41710F1BB00902929 /* UIKit.framework in Frameworks */,
+				F2BDF9E61710F1BB00902929 /* Foundation.framework in Frameworks */,
+				F2BDF9E81710F1BB00902929 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F26D42F7171073CA0096AE04 = {
+		F2BDF9D71710F1BA00902929 = {
 			isa = PBXGroup;
 			children = (
-				F26D4309171073CB0096AE04 /* Presentation Judge */,
-				F26D4302171073CB0096AE04 /* Frameworks */,
-				F26D4301171073CB0096AE04 /* Products */,
+				F2BDF9E91710F1BB00902929 /* Presentation Judge */,
+				F2BDF9E21710F1BB00902929 /* Frameworks */,
+				F2BDF9E11710F1BB00902929 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F26D4301171073CB0096AE04 /* Products */ = {
+		F2BDF9E11710F1BB00902929 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F26D4300171073CB0096AE04 /* Presentation Judge.app */,
+				F2BDF9E01710F1BB00902929 /* Presentation Judge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F26D4302171073CB0096AE04 /* Frameworks */ = {
+		F2BDF9E21710F1BB00902929 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F26D4303171073CB0096AE04 /* UIKit.framework */,
-				F26D4305171073CB0096AE04 /* Foundation.framework */,
-				F26D4307171073CB0096AE04 /* CoreGraphics.framework */,
+				F2BDF9E31710F1BB00902929 /* UIKit.framework */,
+				F2BDF9E51710F1BB00902929 /* Foundation.framework */,
+				F2BDF9E71710F1BB00902929 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F26D4309171073CB0096AE04 /* Presentation Judge */ = {
+		F2BDF9E91710F1BB00902929 /* Presentation Judge */ = {
 			isa = PBXGroup;
 			children = (
-				F26D4312171073CB0096AE04 /* pageAppAppDelegate.h */,
-				F26D4313171073CB0096AE04 /* pageAppAppDelegate.m */,
-				F26D431B171073CB0096AE04 /* MainStoryboard.storyboard */,
-				F26D431E171073CB0096AE04 /* pageAppViewController.h */,
-				F26D431F171073CB0096AE04 /* pageAppViewController.m */,
-				F26D430A171073CB0096AE04 /* Supporting Files */,
+				F2BDF9F21710F1BB00902929 /* AppDelegate.h */,
+				F2BDF9F31710F1BB00902929 /* AppDelegate.m */,
+				F2BDF9FB1710F1BB00902929 /* MainStoryboard.storyboard */,
+				F2BDF9FE1710F1BB00902929 /* ViewController.h */,
+				F2BDF9FF1710F1BB00902929 /* ViewController.m */,
+				F2BDF9EA1710F1BB00902929 /* Supporting Files */,
 			);
 			path = "Presentation Judge";
 			sourceTree = "<group>";
 		};
-		F26D430A171073CB0096AE04 /* Supporting Files */ = {
+		F2BDF9EA1710F1BB00902929 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F26D430B171073CB0096AE04 /* Presentation Judge-Info.plist */,
-				F26D430C171073CB0096AE04 /* InfoPlist.strings */,
-				F26D430F171073CB0096AE04 /* main.m */,
-				F26D4311171073CB0096AE04 /* Presentation Judge-Prefix.pch */,
-				F26D4315171073CB0096AE04 /* Default.png */,
-				F26D4317171073CB0096AE04 /* Default@2x.png */,
-				F26D4319171073CB0096AE04 /* Default-568h@2x.png */,
+				F2BDF9EB1710F1BB00902929 /* Presentation Judge-Info.plist */,
+				F2BDF9EC1710F1BB00902929 /* InfoPlist.strings */,
+				F2BDF9EF1710F1BB00902929 /* main.m */,
+				F2BDF9F11710F1BB00902929 /* Presentation Judge-Prefix.pch */,
+				F2BDF9F51710F1BB00902929 /* Default.png */,
+				F2BDF9F71710F1BB00902929 /* Default@2x.png */,
+				F2BDF9F91710F1BB00902929 /* Default-568h@2x.png */,
+				F2BDFA091710F20700902929 /* TestViewController.h */,
+				F2BDFA0A1710F20700902929 /* TestViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,13 +115,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F26D42FF171073CB0096AE04 /* Presentation Judge */ = {
+		F2BDF9DF1710F1BB00902929 /* Presentation Judge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F26D4323171073CB0096AE04 /* Build configuration list for PBXNativeTarget "Presentation Judge" */;
+			buildConfigurationList = F2BDFA031710F1BB00902929 /* Build configuration list for PBXNativeTarget "Presentation Judge" */;
 			buildPhases = (
-				F26D42FC171073CB0096AE04 /* Sources */,
-				F26D42FD171073CB0096AE04 /* Frameworks */,
-				F26D42FE171073CB0096AE04 /* Resources */,
+				F2BDF9DC1710F1BB00902929 /* Sources */,
+				F2BDF9DD1710F1BB00902929 /* Frameworks */,
+				F2BDF9DE1710F1BB00902929 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -124,77 +129,77 @@
 			);
 			name = "Presentation Judge";
 			productName = "Presentation Judge";
-			productReference = F26D4300171073CB0096AE04 /* Presentation Judge.app */;
+			productReference = F2BDF9E01710F1BB00902929 /* Presentation Judge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F26D42F8171073CA0096AE04 /* Project object */ = {
+		F2BDF9D81710F1BA00902929 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = pageApp;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = Eden;
+				ORGANIZATIONNAME = "S. Alzheimer, L. Malenfant, E. Englert";
 			};
-			buildConfigurationList = F26D42FB171073CA0096AE04 /* Build configuration list for PBXProject "Presentation Judge" */;
+			buildConfigurationList = F2BDF9DB1710F1BA00902929 /* Build configuration list for PBXProject "Presentation Judge" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F26D42F7171073CA0096AE04;
-			productRefGroup = F26D4301171073CB0096AE04 /* Products */;
+			mainGroup = F2BDF9D71710F1BA00902929;
+			productRefGroup = F2BDF9E11710F1BB00902929 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F26D42FF171073CB0096AE04 /* Presentation Judge */,
+				F2BDF9DF1710F1BB00902929 /* Presentation Judge */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F26D42FE171073CB0096AE04 /* Resources */ = {
+		F2BDF9DE1710F1BB00902929 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26D430E171073CB0096AE04 /* InfoPlist.strings in Resources */,
-				F26D4316171073CB0096AE04 /* Default.png in Resources */,
-				F26D4318171073CB0096AE04 /* Default@2x.png in Resources */,
-				F26D431A171073CB0096AE04 /* Default-568h@2x.png in Resources */,
-				F26D431D171073CB0096AE04 /* MainStoryboard.storyboard in Resources */,
+				F2BDF9EE1710F1BB00902929 /* InfoPlist.strings in Resources */,
+				F2BDF9F61710F1BB00902929 /* Default.png in Resources */,
+				F2BDF9F81710F1BB00902929 /* Default@2x.png in Resources */,
+				F2BDF9FA1710F1BB00902929 /* Default-568h@2x.png in Resources */,
+				F2BDF9FD1710F1BB00902929 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F26D42FC171073CB0096AE04 /* Sources */ = {
+		F2BDF9DC1710F1BB00902929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F26D4310171073CB0096AE04 /* main.m in Sources */,
-				F26D4314171073CB0096AE04 /* pageAppAppDelegate.m in Sources */,
-				F26D4320171073CB0096AE04 /* pageAppViewController.m in Sources */,
+				F2BDF9F01710F1BB00902929 /* main.m in Sources */,
+				F2BDF9F41710F1BB00902929 /* AppDelegate.m in Sources */,
+				F2BDFA001710F1BB00902929 /* ViewController.m in Sources */,
+				F2BDFA0B1710F20700902929 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F26D430C171073CB0096AE04 /* InfoPlist.strings */ = {
+		F2BDF9EC1710F1BB00902929 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F26D430D171073CB0096AE04 /* en */,
+				F2BDF9ED1710F1BB00902929 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F26D431B171073CB0096AE04 /* MainStoryboard.storyboard */ = {
+		F2BDF9FB1710F1BB00902929 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F26D431C171073CB0096AE04 /* en */,
+				F2BDF9FC1710F1BB00902929 /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -202,7 +207,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F26D4321171073CB0096AE04 /* Debug */ = {
+		F2BDFA011710F1BB00902929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +239,7 @@
 			};
 			name = Debug;
 		};
-		F26D4322171073CB0096AE04 /* Release */ = {
+		F2BDFA021710F1BB00902929 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,7 +265,7 @@
 			};
 			name = Release;
 		};
-		F26D4324171073CB0096AE04 /* Debug */ = {
+		F2BDFA041710F1BB00902929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -271,7 +276,7 @@
 			};
 			name = Debug;
 		};
-		F26D4325171073CB0096AE04 /* Release */ = {
+		F2BDFA051710F1BB00902929 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -285,24 +290,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F26D42FB171073CA0096AE04 /* Build configuration list for PBXProject "Presentation Judge" */ = {
+		F2BDF9DB1710F1BA00902929 /* Build configuration list for PBXProject "Presentation Judge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F26D4321171073CB0096AE04 /* Debug */,
-				F26D4322171073CB0096AE04 /* Release */,
+				F2BDFA011710F1BB00902929 /* Debug */,
+				F2BDFA021710F1BB00902929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F26D4323171073CB0096AE04 /* Build configuration list for PBXNativeTarget "Presentation Judge" */ = {
+		F2BDFA031710F1BB00902929 /* Build configuration list for PBXNativeTarget "Presentation Judge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F26D4324171073CB0096AE04 /* Debug */,
-				F26D4325171073CB0096AE04 /* Release */,
+				F2BDFA041710F1BB00902929 /* Debug */,
+				F2BDFA051710F1BB00902929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F26D42F8171073CA0096AE04 /* Project object */;
+	rootObject = F2BDF9D81710F1BA00902929 /* Project object */;
 }
