@@ -10,8 +10,8 @@
 
 @interface AssignedPresentations : NSObject
 
-@property (nonatomic, copy) NSString *presentationTitle;
-@property (nonatomic, copy) NSString *presenterName;
+@property (nonatomic, strong) NSString *presentationTitle;
+@property (nonatomic, strong) NSString *presenterName;
 
 
 @end

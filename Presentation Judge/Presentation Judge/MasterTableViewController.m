@@ -38,8 +38,39 @@
     pres2.presentationTitle = @"How to Make a PB&J Sandwich";
     pres2.presenterName = @"Will Ferrell";
     
+    AssignedPresentations *pres3 = [[AssignedPresentations alloc] init];
+    pres3.presentationTitle = @"How to Save the World";
+    pres3.presenterName = @"Ironman";
+    
+    AssignedPresentations *pres4 = [[AssignedPresentations alloc] init];
+    pres4.presentationTitle = @"How to Make KFC Chicken";
+    pres4.presenterName = @"The Colonel";
+    
+    AssignedPresentations *pres5 = [[AssignedPresentations alloc] init];
+    pres5.presentationTitle = @"How to Golf 1";
+    pres5.presenterName = @"Happy Gilmore";
+    
+    AssignedPresentations *pres6 = [[AssignedPresentations alloc] init];
+    pres6.presentationTitle = @"How to Golf 2";
+    pres6.presenterName = @"Charles Barkley";
+    
+    AssignedPresentations *pres7 = [[AssignedPresentations alloc] init];
+    pres7.presentationTitle = @"How to Get the Force";
+    pres7.presenterName = @"Obi-Wan Kenobi";
+    
+    AssignedPresentations *pres8 = [[AssignedPresentations alloc] init];
+    pres8.presentationTitle = @"How to Build Bunkbeds Without Power Tools";
+    pres8.presenterName = @"Brennan Huff and Dale Doback";
+    
     [presentationTitles addObject:pres1];
     [presentationTitles addObject:pres2];
+    [presentationTitles addObject:pres3];
+    [presentationTitles addObject:pres4];
+    [presentationTitles addObject:pres5];
+    [presentationTitles addObject:pres6];
+    [presentationTitles addObject:pres7];
+    [presentationTitles addObject:pres8];
+    
     
 
     // Uncomment the following line to preserve selection between presentations.
@@ -59,16 +90,17 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return [presentationTitles count];
+    //return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -79,7 +111,10 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    //cell.textLabel.text = [self getMyDataForRow:indexPath.row inSection:indexPath.section];
+    
     [[cell textLabel] setText:assignedPresentations.presentationTitle];
+    [[cell detailTextLabel] setText:assignedPresentations.presenterName];
 
     return cell;
 }
