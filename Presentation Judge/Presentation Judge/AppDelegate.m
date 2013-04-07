@@ -12,7 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UISplitViewController *splitViewController = (UISplitViewController *) self.window.rootViewController;
+    splitViewController.delegate = [splitViewController.viewControllers lastObject];
     return YES;
 }
 							

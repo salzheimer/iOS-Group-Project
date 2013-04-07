@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E64F1712140400AF7A18 /* MasterTableViewController.m */; };
+		F207E6531712148700AF7A18 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E6521712148700AF7A18 /* DetailViewController.m */; };
+		F207E65617121B9B00AF7A18 /* AssignedPresentations.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E65517121B9B00AF7A18 /* AssignedPresentations.m */; };
 		F2BDF9E41710F1BB00902929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E31710F1BB00902929 /* UIKit.framework */; };
 		F2BDF9E61710F1BB00902929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E51710F1BB00902929 /* Foundation.framework */; };
 		F2BDF9E81710F1BB00902929 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E71710F1BB00902929 /* CoreGraphics.framework */; };
@@ -18,10 +21,15 @@
 		F2BDF9FA1710F1BB00902929 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2BDF9F91710F1BB00902929 /* Default-568h@2x.png */; };
 		F2BDF9FD1710F1BB00902929 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BDF9FB1710F1BB00902929 /* MainStoryboard.storyboard */; };
 		F2BDFA001710F1BB00902929 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDF9FF1710F1BB00902929 /* ViewController.m */; };
-		F2BDFA0B1710F20700902929 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDFA0A1710F20700902929 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F207E64E1712140400AF7A18 /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
+		F207E64F1712140400AF7A18 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
+		F207E6511712148700AF7A18 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F207E6521712148700AF7A18 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F207E65417121B9B00AF7A18 /* AssignedPresentations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignedPresentations.h; sourceTree = "<group>"; };
+		F207E65517121B9B00AF7A18 /* AssignedPresentations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignedPresentations.m; sourceTree = "<group>"; };
 		F2BDF9E01710F1BB00902929 /* Presentation Judge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Presentation Judge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BDF9E31710F1BB00902929 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2BDF9E51710F1BB00902929 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,8 +46,6 @@
 		F2BDF9FC1710F1BB00902929 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F2BDF9FE1710F1BB00902929 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F2BDF9FF1710F1BB00902929 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F2BDFA091710F20700902929 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		F2BDFA0A1710F20700902929 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		F2BDF9EA1710F1BB00902929 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F207E64E1712140400AF7A18 /* MasterTableViewController.h */,
+				F207E64F1712140400AF7A18 /* MasterTableViewController.m */,
 				F2BDF9EB1710F1BB00902929 /* Presentation Judge-Info.plist */,
 				F2BDF9EC1710F1BB00902929 /* InfoPlist.strings */,
 				F2BDF9EF1710F1BB00902929 /* main.m */,
@@ -106,8 +114,10 @@
 				F2BDF9F51710F1BB00902929 /* Default.png */,
 				F2BDF9F71710F1BB00902929 /* Default@2x.png */,
 				F2BDF9F91710F1BB00902929 /* Default-568h@2x.png */,
-				F2BDFA091710F20700902929 /* TestViewController.h */,
-				F2BDFA0A1710F20700902929 /* TestViewController.m */,
+				F207E6511712148700AF7A18 /* DetailViewController.h */,
+				F207E6521712148700AF7A18 /* DetailViewController.m */,
+				F207E65417121B9B00AF7A18 /* AssignedPresentations.h */,
+				F207E65517121B9B00AF7A18 /* AssignedPresentations.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -181,7 +191,9 @@
 				F2BDF9F01710F1BB00902929 /* main.m in Sources */,
 				F2BDF9F41710F1BB00902929 /* AppDelegate.m in Sources */,
 				F2BDFA001710F1BB00902929 /* ViewController.m in Sources */,
-				F2BDFA0B1710F20700902929 /* TestViewController.m in Sources */,
+				F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */,
+				F207E6531712148700AF7A18 /* DetailViewController.m in Sources */,
+				F207E65617121B9B00AF7A18 /* AssignedPresentations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +318,7 @@
 				F2BDFA051710F1BB00902929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
