@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSString *presentationTitle;
 @property (nonatomic, strong) NSString *presenterName;
+@property (nonatomic, strong) NSString *presenterEmail;
 
 
 @end

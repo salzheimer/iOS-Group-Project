@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "DetailViewController.h"
+#import "MasterTableViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +16,13 @@
 {
     UISplitViewController *splitViewController = (UISplitViewController *) self.window.rootViewController;
     splitViewController.delegate = [splitViewController.viewControllers lastObject];
+    
+    DetailViewController *detailViewController = (DetailViewController *) [splitViewController.viewControllers lastObject];
+    MasterTableViewController *masterTableViewController = (MasterTableViewController *) [[splitViewController.viewControllers objectAtIndex:0] topViewController];
+    
+    masterTableViewController.delegate = detailViewController;
+    
+    
     return YES;
 }
 							

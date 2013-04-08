@@ -33,34 +33,42 @@
     AssignedPresentations *pres1 = [[AssignedPresentations alloc] init];
     pres1.presentationTitle = @"How to Blow Your Nose";
     pres1.presenterName = @"Ron Burgundy";
+    pres1.presenterEmail = @"rburgundy@kvwn.com";
     
     AssignedPresentations *pres2 = [[AssignedPresentations alloc] init];
     pres2.presentationTitle = @"How to Make a PB&J Sandwich";
     pres2.presenterName = @"Will Ferrell";
+    pres2.presenterEmail = @"wferrell@kvwn.com";
     
     AssignedPresentations *pres3 = [[AssignedPresentations alloc] init];
     pres3.presentationTitle = @"How to Save the World";
-    pres3.presenterName = @"Ironman";
+    pres3.presenterName = @"Tony Stark - Ironman";
+    pres3.presenterEmail = @"rdowningjr@starkenterprises.com";
     
     AssignedPresentations *pres4 = [[AssignedPresentations alloc] init];
     pres4.presentationTitle = @"How to Make KFC Chicken";
     pres4.presenterName = @"The Colonel";
+    pres4.presenterEmail = @"thecolonel@kfc.com";
     
     AssignedPresentations *pres5 = [[AssignedPresentations alloc] init];
     pres5.presentationTitle = @"How to Golf 1";
     pres5.presenterName = @"Happy Gilmore";
+    pres5.presenterEmail = @"asandler@happy.com";
     
     AssignedPresentations *pres6 = [[AssignedPresentations alloc] init];
     pres6.presentationTitle = @"How to Golf 2";
     pres6.presenterName = @"Charles Barkley";
+    pres6.presenterEmail = @"cbarkley@espn.com";
     
     AssignedPresentations *pres7 = [[AssignedPresentations alloc] init];
     pres7.presentationTitle = @"How to Get the Force";
     pres7.presenterName = @"Obi-Wan Kenobi";
+    pres7.presenterEmail = @"okenobi@jediknight.com";
     
     AssignedPresentations *pres8 = [[AssignedPresentations alloc] init];
     pres8.presentationTitle = @"How to Build Bunkbeds Without Power Tools";
     pres8.presenterName = @"Brennan Huff and Dale Doback";
+    pres8.presenterEmail = @"brother@stepbrothers.com";
     
     [presentationTitles addObject:pres1];
     [presentationTitles addObject:pres2];
@@ -162,13 +170,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    AssignedPresentations *selectedPresentation = [presentationTitles objectAtIndex:[indexPath row]];
+    [self.delegate didSelectPresentation:selectedPresentation];
 }
 
 @end

@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AssignedPresentations.h"
+
+@protocol PresentationDelegate <NSObject>
+
+-(void) didSelectPresentation:(AssignedPresentations *) presentation;
+
+@end
 
 @interface MasterTableViewController : UITableViewController{
 
     NSMutableArray *presentationTitles;
 }
+
+@property (nonatomic, strong) id<PresentationDelegate> delegate;
 
 @end
