@@ -10,6 +10,7 @@
 		F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E64F1712140400AF7A18 /* MasterTableViewController.m */; };
 		F207E6531712148700AF7A18 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E6521712148700AF7A18 /* DetailViewController.m */; };
 		F207E65617121B9B00AF7A18 /* AssignedPresentations.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E65517121B9B00AF7A18 /* AssignedPresentations.m */; };
+		F269ADEB17126A6000F31071 /* MainStoryboard in Resources */ = {isa = PBXBuildFile; fileRef = F269ADEA17126A6000F31071 /* MainStoryboard */; };
 		F2BDF9E41710F1BB00902929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E31710F1BB00902929 /* UIKit.framework */; };
 		F2BDF9E61710F1BB00902929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E51710F1BB00902929 /* Foundation.framework */; };
 		F2BDF9E81710F1BB00902929 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E71710F1BB00902929 /* CoreGraphics.framework */; };
@@ -30,6 +31,7 @@
 		F207E6521712148700AF7A18 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		F207E65417121B9B00AF7A18 /* AssignedPresentations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignedPresentations.h; sourceTree = "<group>"; };
 		F207E65517121B9B00AF7A18 /* AssignedPresentations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignedPresentations.m; sourceTree = "<group>"; };
+		F269ADEA17126A6000F31071 /* MainStoryboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MainStoryboard; path = "../../../../../../../Desktop/Presentation Judge/MainStoryboard"; sourceTree = "<group>"; };
 		F2BDF9E01710F1BB00902929 /* Presentation Judge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Presentation Judge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BDF9E31710F1BB00902929 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2BDF9E51710F1BB00902929 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +97,7 @@
 				F2BDF9F21710F1BB00902929 /* AppDelegate.h */,
 				F2BDF9F31710F1BB00902929 /* AppDelegate.m */,
 				F2BDF9FB1710F1BB00902929 /* MainStoryboard.storyboard */,
+				F269ADEA17126A6000F31071 /* MainStoryboard */,
 				F2BDF9FE1710F1BB00902929 /* ViewController.h */,
 				F2BDF9FF1710F1BB00902929 /* ViewController.m */,
 				F2BDF9EA1710F1BB00902929 /* Supporting Files */,
@@ -178,6 +181,7 @@
 				F2BDF9F81710F1BB00902929 /* Default@2x.png in Resources */,
 				F2BDF9FA1710F1BB00902929 /* Default-568h@2x.png in Resources */,
 				F2BDF9FD1710F1BB00902929 /* MainStoryboard.storyboard in Resources */,
+				F269ADEB17126A6000F31071 /* MainStoryboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
