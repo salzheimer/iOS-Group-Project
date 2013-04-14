@@ -183,27 +183,6 @@
             <point key="canvasLocation" x="11" y="-846"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="judgeEmail" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="judgeName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="nextPage" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="presentationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="presentationTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="presenterEmail" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="presenterName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
-            </relationships>
-        </class>
-        <class className="MasterTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterTableViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
