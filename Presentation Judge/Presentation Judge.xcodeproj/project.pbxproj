@@ -24,6 +24,7 @@
 		1B7A252D171C7E1500EB92D6 /* SectionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A252C171C7E1500EB92D6 /* SectionDBAccess.m */; };
 		1B7A2530171C7F6100EB92D6 /* SubSectionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A252F171C7F6100EB92D6 /* SubSectionDBAccess.m */; };
 		1B7A2533171C83FA00EB92D6 /* QuestionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A2532171C83FA00EB92D6 /* QuestionDBAccess.m */; };
+		930E96B2171CCB1F00623A25 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930E96B1171CCB1F00623A25 /* MessageUI.framework */; };
 		F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E64F1712140400AF7A18 /* MasterTableViewController.m */; };
 		F207E6531712148700AF7A18 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E6521712148700AF7A18 /* DetailViewController.m */; };
 		F207E65617121B9B00AF7A18 /* AssignedPresentations.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E65517121B9B00AF7A18 /* AssignedPresentations.m */; };
@@ -73,6 +74,7 @@
 		1B7A252F171C7F6100EB92D6 /* SubSectionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubSectionDBAccess.m; sourceTree = "<group>"; };
 		1B7A2531171C83FA00EB92D6 /* QuestionDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDBAccess.h; sourceTree = "<group>"; };
 		1B7A2532171C83FA00EB92D6 /* QuestionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDBAccess.m; sourceTree = "<group>"; };
+		930E96B1171CCB1F00623A25 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F207E64E1712140400AF7A18 /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
 		F207E64F1712140400AF7A18 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
 		F207E6511712148700AF7A18 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930E96B2171CCB1F00623A25 /* MessageUI.framework in Frameworks */,
 				1B16278A1719EC53005AC505 /* libsqlite3.0.dylib in Frameworks */,
 				F2BDF9E41710F1BB00902929 /* UIKit.framework in Frameworks */,
 				F2BDF9E61710F1BB00902929 /* Foundation.framework in Frameworks */,
@@ -178,6 +181,7 @@
 		F2BDF9E21710F1BB00902929 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				930E96B1171CCB1F00623A25 /* MessageUI.framework */,
 				F2BDF9E31710F1BB00902929 /* UIKit.framework */,
 				F2BDF9E51710F1BB00902929 /* Foundation.framework */,
 				F2BDF9E71710F1BB00902929 /* CoreGraphics.framework */,
