@@ -14,8 +14,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //UISplitViewController *splitViewController = (UISplitViewController *) self.window.rootViewController;
-    //splitViewController.delegate = [splitViewController.viewControllers lastObject];
+    UISplitViewController *splitViewController = (UISplitViewController *) self.window.rootViewController;
+    splitViewController.delegate = [splitViewController.viewControllers lastObject];
     
     //DetailViewController *detailViewController = (DetailViewController *) [splitViewController.viewControllers lastObject];
     //MasterTableViewController *masterTableViewController = (MasterTableViewController *) [[splitViewController.viewControllers objectAtIndex:0] topViewController];
