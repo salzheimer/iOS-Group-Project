@@ -7,23 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B1627621719CC54005AC505 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1627611719CC54005AC505 /* Section.m */; };
-		1B1627651719CD35005AC505 /* SubSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1627641719CD35005AC505 /* SubSection.m */; };
-		1B1627691719CDFD005AC505 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1627681719CDFD005AC505 /* Question.m */; };
-		1B16276C1719CEC2005AC505 /* SectionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16276B1719CEC2005AC505 /* SectionQuestion.m */; };
-		1B16276F1719D226005AC505 /* PresentationQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16276E1719D226005AC505 /* PresentationQuestion.m */; };
-		1B1627721719D3BC005AC505 /* Presentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1627711719D3BC005AC505 /* Presentation.m */; };
-		1B1627751719DA65005AC505 /* RankStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1627741719DA65005AC505 /* RankStyle.m */; };
-		1B1627781719DB4A005AC505 /* PresentationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1627771719DB4A005AC505 /* PresentationPresenter.m */; };
-		1B16277B1719DC0E005AC505 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16277A1719DC0E005AC505 /* Presenter.m */; };
-		1B16277E1719DCBE005AC505 /* PresentationJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B16277D1719DCBD005AC505 /* PresentationJudge.m */; };
-		1B1627811719DD7C005AC505 /* Judge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1627801719DD7C005AC505 /* Judge.m */; };
-		1B1627851719DDF3005AC505 /* PresentationJudge.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1B1627841719DDF3005AC505 /* PresentationJudge.sqlite */; };
-		1B1627881719DE1D005AC505 /* PresentationDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1627871719DE1D005AC505 /* PresentationDBAccess.m */; };
 		1B16278A1719EC53005AC505 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1627891719EC53005AC505 /* libsqlite3.0.dylib */; };
-		1B7A252D171C7E1500EB92D6 /* SectionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A252C171C7E1500EB92D6 /* SectionDBAccess.m */; };
-		1B7A2530171C7F6100EB92D6 /* SubSectionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A252F171C7F6100EB92D6 /* SubSectionDBAccess.m */; };
-		1B7A2533171C83FA00EB92D6 /* QuestionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7A2532171C83FA00EB92D6 /* QuestionDBAccess.m */; };
 		930E96B2171CCB1F00623A25 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930E96B1171CCB1F00623A25 /* MessageUI.framework */; };
 		F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E64F1712140400AF7A18 /* MasterTableViewController.m */; };
 		F207E6531712148700AF7A18 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E6521712148700AF7A18 /* DetailViewController.m */; };
@@ -42,38 +26,52 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B1627601719CC54005AC505 /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
-		1B1627611719CC54005AC505 /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
-		1B1627631719CD35005AC505 /* SubSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubSection.h; sourceTree = "<group>"; };
-		1B1627641719CD35005AC505 /* SubSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubSection.m; sourceTree = "<group>"; };
-		1B1627671719CDFD005AC505 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
-		1B1627681719CDFD005AC505 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
-		1B16276A1719CEC2005AC505 /* SectionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionQuestion.h; sourceTree = "<group>"; };
-		1B16276B1719CEC2005AC505 /* SectionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionQuestion.m; sourceTree = "<group>"; };
-		1B16276D1719D226005AC505 /* PresentationQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationQuestion.h; sourceTree = "<group>"; };
-		1B16276E1719D226005AC505 /* PresentationQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationQuestion.m; sourceTree = "<group>"; };
-		1B1627701719D3BC005AC505 /* Presentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
-		1B1627711719D3BC005AC505 /* Presentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presentation.m; sourceTree = "<group>"; };
-		1B1627731719DA65005AC505 /* RankStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankStyle.h; sourceTree = "<group>"; };
-		1B1627741719DA65005AC505 /* RankStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankStyle.m; sourceTree = "<group>"; };
-		1B1627761719DB4A005AC505 /* PresentationPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationPresenter.h; sourceTree = "<group>"; };
-		1B1627771719DB4A005AC505 /* PresentationPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationPresenter.m; sourceTree = "<group>"; };
-		1B1627791719DC0E005AC505 /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
-		1B16277A1719DC0E005AC505 /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
-		1B16277C1719DCBD005AC505 /* PresentationJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationJudge.h; sourceTree = "<group>"; };
-		1B16277D1719DCBD005AC505 /* PresentationJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationJudge.m; sourceTree = "<group>"; };
-		1B16277F1719DD7C005AC505 /* Judge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Judge.h; sourceTree = "<group>"; };
-		1B1627801719DD7C005AC505 /* Judge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Judge.m; sourceTree = "<group>"; };
-		1B1627841719DDF3005AC505 /* PresentationJudge.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = PresentationJudge.sqlite; path = "Presentation Judge/PresentationJudge.sqlite"; sourceTree = "<group>"; };
-		1B1627861719DE1D005AC505 /* PresentationDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationDBAccess.h; sourceTree = "<group>"; };
-		1B1627871719DE1D005AC505 /* PresentationDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationDBAccess.m; sourceTree = "<group>"; };
 		1B1627891719EC53005AC505 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		1B7A252B171C7E1500EB92D6 /* SectionDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionDBAccess.h; sourceTree = "<group>"; };
-		1B7A252C171C7E1500EB92D6 /* SectionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionDBAccess.m; sourceTree = "<group>"; };
-		1B7A252E171C7F6100EB92D6 /* SubSectionDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubSectionDBAccess.h; sourceTree = "<group>"; };
-		1B7A252F171C7F6100EB92D6 /* SubSectionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubSectionDBAccess.m; sourceTree = "<group>"; };
-		1B7A2531171C83FA00EB92D6 /* QuestionDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDBAccess.h; sourceTree = "<group>"; };
-		1B7A2532171C83FA00EB92D6 /* QuestionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDBAccess.m; sourceTree = "<group>"; };
+		1B753E591723126600CC6E4E /* Judge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Judge.h; sourceTree = "<group>"; };
+		1B753E5A1723126600CC6E4E /* Judge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Judge.m; sourceTree = "<group>"; };
+		1B753E5B1723126600CC6E4E /* Presentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presentation.h; sourceTree = "<group>"; };
+		1B753E5C1723126600CC6E4E /* Presentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Presentation.m; sourceTree = "<group>"; };
+		1B753E5D1723126600CC6E4E /* PresentationJudge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationJudge.h; sourceTree = "<group>"; };
+		1B753E5E1723126600CC6E4E /* PresentationJudge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationJudge.m; sourceTree = "<group>"; };
+		1B753E5F1723126600CC6E4E /* PresentationPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationPresenter.h; sourceTree = "<group>"; };
+		1B753E601723126600CC6E4E /* PresentationPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationPresenter.m; sourceTree = "<group>"; };
+		1B753E611723126600CC6E4E /* PresentationQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationQuestion.h; sourceTree = "<group>"; };
+		1B753E621723126600CC6E4E /* PresentationQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationQuestion.m; sourceTree = "<group>"; };
+		1B753E631723126600CC6E4E /* Presenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		1B753E641723126600CC6E4E /* Presenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		1B753E651723126600CC6E4E /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		1B753E661723126600CC6E4E /* Question.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		1B753E671723126600CC6E4E /* RankStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankStyle.h; sourceTree = "<group>"; };
+		1B753E681723126600CC6E4E /* RankStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankStyle.m; sourceTree = "<group>"; };
+		1B753E691723126600CC6E4E /* Section.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		1B753E6A1723126600CC6E4E /* Section.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		1B753E6B1723126600CC6E4E /* SectionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionQuestion.h; sourceTree = "<group>"; };
+		1B753E6C1723126600CC6E4E /* SectionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionQuestion.m; sourceTree = "<group>"; };
+		1B753E6D1723126600CC6E4E /* SubSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSection.h; sourceTree = "<group>"; };
+		1B753E6E1723126600CC6E4E /* SubSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSection.m; sourceTree = "<group>"; };
+		1B753E6F1723129900CC6E4E /* JudgeDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JudgeDBAccess.h; sourceTree = "<group>"; };
+		1B753E701723129900CC6E4E /* JudgeDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JudgeDBAccess.m; sourceTree = "<group>"; };
+		1B753E711723129900CC6E4E /* PresentationQuestionsDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationQuestionsDBAccess.h; sourceTree = "<group>"; };
+		1B753E721723129900CC6E4E /* PresentationQuestionsDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationQuestionsDBAccess.m; sourceTree = "<group>"; };
+		1B753E731723129900CC6E4E /* PresentationDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationDBAccess.h; sourceTree = "<group>"; };
+		1B753E741723129900CC6E4E /* PresentationDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationDBAccess.m; sourceTree = "<group>"; };
+		1B753E751723129900CC6E4E /* PresentationJudgeDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationJudgeDBAccess.h; sourceTree = "<group>"; };
+		1B753E761723129900CC6E4E /* PresentationJudgeDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationJudgeDBAccess.m; sourceTree = "<group>"; };
+		1B753E771723129900CC6E4E /* PresenterDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresenterDBAccess.h; sourceTree = "<group>"; };
+		1B753E781723129900CC6E4E /* PresenterDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresenterDBAccess.m; sourceTree = "<group>"; };
+		1B753E791723129900CC6E4E /* QuestionDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionDBAccess.h; sourceTree = "<group>"; };
+		1B753E7A1723129900CC6E4E /* QuestionDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionDBAccess.m; sourceTree = "<group>"; };
+		1B753E7B1723129900CC6E4E /* QuestionRankingDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionRankingDBAccess.h; sourceTree = "<group>"; };
+		1B753E7C1723129900CC6E4E /* QuestionRankingDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionRankingDBAccess.m; sourceTree = "<group>"; };
+		1B753E7D1723129900CC6E4E /* RankStyleDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankStyleDBAccess.h; sourceTree = "<group>"; };
+		1B753E7E1723129900CC6E4E /* RankStyleDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankStyleDBAccess.m; sourceTree = "<group>"; };
+		1B753E7F1723129900CC6E4E /* SectionDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionDBAccess.h; sourceTree = "<group>"; };
+		1B753E801723129900CC6E4E /* SectionDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionDBAccess.m; sourceTree = "<group>"; };
+		1B753E811723129900CC6E4E /* SectionQuestionDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionQuestionDBAccess.h; sourceTree = "<group>"; };
+		1B753E821723129900CC6E4E /* SectionQuestionDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionQuestionDBAccess.m; sourceTree = "<group>"; };
+		1B753E831723129900CC6E4E /* SubSectionDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSectionDBAccess.h; sourceTree = "<group>"; };
+		1B753E841723129900CC6E4E /* SubSectionDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSectionDBAccess.m; sourceTree = "<group>"; };
+		1B753E851723135400CC6E4E /* PresentationJudge.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = PresentationJudge.sqlite; path = DB/PresentationJudge.sqlite; sourceTree = "<group>"; };
 		930E96B1171CCB1F00623A25 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F207E64E1712140400AF7A18 /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
 		F207E64F1712140400AF7A18 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
@@ -118,28 +116,28 @@
 		1B16275F1719CBE6005AC505 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1B1627601719CC54005AC505 /* Section.h */,
-				1B1627611719CC54005AC505 /* Section.m */,
-				1B1627631719CD35005AC505 /* SubSection.h */,
-				1B1627641719CD35005AC505 /* SubSection.m */,
-				1B1627671719CDFD005AC505 /* Question.h */,
-				1B1627681719CDFD005AC505 /* Question.m */,
-				1B16276A1719CEC2005AC505 /* SectionQuestion.h */,
-				1B16276B1719CEC2005AC505 /* SectionQuestion.m */,
-				1B16276D1719D226005AC505 /* PresentationQuestion.h */,
-				1B16276E1719D226005AC505 /* PresentationQuestion.m */,
-				1B1627701719D3BC005AC505 /* Presentation.h */,
-				1B1627711719D3BC005AC505 /* Presentation.m */,
-				1B1627731719DA65005AC505 /* RankStyle.h */,
-				1B1627741719DA65005AC505 /* RankStyle.m */,
-				1B1627761719DB4A005AC505 /* PresentationPresenter.h */,
-				1B1627771719DB4A005AC505 /* PresentationPresenter.m */,
-				1B1627791719DC0E005AC505 /* Presenter.h */,
-				1B16277A1719DC0E005AC505 /* Presenter.m */,
-				1B16277C1719DCBD005AC505 /* PresentationJudge.h */,
-				1B16277D1719DCBD005AC505 /* PresentationJudge.m */,
-				1B16277F1719DD7C005AC505 /* Judge.h */,
-				1B1627801719DD7C005AC505 /* Judge.m */,
+				1B753E591723126600CC6E4E /* Judge.h */,
+				1B753E5A1723126600CC6E4E /* Judge.m */,
+				1B753E5B1723126600CC6E4E /* Presentation.h */,
+				1B753E5C1723126600CC6E4E /* Presentation.m */,
+				1B753E5D1723126600CC6E4E /* PresentationJudge.h */,
+				1B753E5E1723126600CC6E4E /* PresentationJudge.m */,
+				1B753E5F1723126600CC6E4E /* PresentationPresenter.h */,
+				1B753E601723126600CC6E4E /* PresentationPresenter.m */,
+				1B753E611723126600CC6E4E /* PresentationQuestion.h */,
+				1B753E621723126600CC6E4E /* PresentationQuestion.m */,
+				1B753E631723126600CC6E4E /* Presenter.h */,
+				1B753E641723126600CC6E4E /* Presenter.m */,
+				1B753E651723126600CC6E4E /* Question.h */,
+				1B753E661723126600CC6E4E /* Question.m */,
+				1B753E671723126600CC6E4E /* RankStyle.h */,
+				1B753E681723126600CC6E4E /* RankStyle.m */,
+				1B753E691723126600CC6E4E /* Section.h */,
+				1B753E6A1723126600CC6E4E /* Section.m */,
+				1B753E6B1723126600CC6E4E /* SectionQuestion.h */,
+				1B753E6C1723126600CC6E4E /* SectionQuestion.m */,
+				1B753E6D1723126600CC6E4E /* SubSection.h */,
+				1B753E6E1723126600CC6E4E /* SubSection.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -147,14 +145,28 @@
 		1B1627661719CDD8005AC505 /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
-				1B1627861719DE1D005AC505 /* PresentationDBAccess.h */,
-				1B1627871719DE1D005AC505 /* PresentationDBAccess.m */,
-				1B7A252B171C7E1500EB92D6 /* SectionDBAccess.h */,
-				1B7A252C171C7E1500EB92D6 /* SectionDBAccess.m */,
-				1B7A252E171C7F6100EB92D6 /* SubSectionDBAccess.h */,
-				1B7A252F171C7F6100EB92D6 /* SubSectionDBAccess.m */,
-				1B7A2531171C83FA00EB92D6 /* QuestionDBAccess.h */,
-				1B7A2532171C83FA00EB92D6 /* QuestionDBAccess.m */,
+				1B753E6F1723129900CC6E4E /* JudgeDBAccess.h */,
+				1B753E701723129900CC6E4E /* JudgeDBAccess.m */,
+				1B753E711723129900CC6E4E /* PresentationQuestionsDBAccess.h */,
+				1B753E721723129900CC6E4E /* PresentationQuestionsDBAccess.m */,
+				1B753E731723129900CC6E4E /* PresentationDBAccess.h */,
+				1B753E741723129900CC6E4E /* PresentationDBAccess.m */,
+				1B753E751723129900CC6E4E /* PresentationJudgeDBAccess.h */,
+				1B753E761723129900CC6E4E /* PresentationJudgeDBAccess.m */,
+				1B753E771723129900CC6E4E /* PresenterDBAccess.h */,
+				1B753E781723129900CC6E4E /* PresenterDBAccess.m */,
+				1B753E791723129900CC6E4E /* QuestionDBAccess.h */,
+				1B753E7A1723129900CC6E4E /* QuestionDBAccess.m */,
+				1B753E7B1723129900CC6E4E /* QuestionRankingDBAccess.h */,
+				1B753E7C1723129900CC6E4E /* QuestionRankingDBAccess.m */,
+				1B753E7D1723129900CC6E4E /* RankStyleDBAccess.h */,
+				1B753E7E1723129900CC6E4E /* RankStyleDBAccess.m */,
+				1B753E7F1723129900CC6E4E /* SectionDBAccess.h */,
+				1B753E801723129900CC6E4E /* SectionDBAccess.m */,
+				1B753E811723129900CC6E4E /* SectionQuestionDBAccess.h */,
+				1B753E821723129900CC6E4E /* SectionQuestionDBAccess.m */,
+				1B753E831723129900CC6E4E /* SubSectionDBAccess.h */,
+				1B753E841723129900CC6E4E /* SubSectionDBAccess.m */,
 			);
 			name = DataAccess;
 			sourceTree = "<group>";
@@ -162,8 +174,8 @@
 		F2BDF9D71710F1BA00902929 = {
 			isa = PBXGroup;
 			children = (
+				1B753E851723135400CC6E4E /* PresentationJudge.sqlite */,
 				1B1627891719EC53005AC505 /* libsqlite3.0.dylib */,
-				1B1627841719DDF3005AC505 /* PresentationJudge.sqlite */,
 				F2BDF9E91710F1BB00902929 /* Presentation Judge */,
 				F2BDF9E21710F1BB00902929 /* Frameworks */,
 				F2BDF9E11710F1BB00902929 /* Products */,
@@ -280,7 +292,6 @@
 				F2BDF9F81710F1BB00902929 /* Default@2x.png in Resources */,
 				F2BDF9FA1710F1BB00902929 /* Default-568h@2x.png in Resources */,
 				F2BDF9FD1710F1BB00902929 /* MainStoryboard.storyboard in Resources */,
-				1B1627851719DDF3005AC505 /* PresentationJudge.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,21 +308,6 @@
 				F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */,
 				F207E6531712148700AF7A18 /* DetailViewController.m in Sources */,
 				F207E65617121B9B00AF7A18 /* AssignedPresentations.m in Sources */,
-				1B1627621719CC54005AC505 /* Section.m in Sources */,
-				1B1627651719CD35005AC505 /* SubSection.m in Sources */,
-				1B1627691719CDFD005AC505 /* Question.m in Sources */,
-				1B16276C1719CEC2005AC505 /* SectionQuestion.m in Sources */,
-				1B16276F1719D226005AC505 /* PresentationQuestion.m in Sources */,
-				1B1627721719D3BC005AC505 /* Presentation.m in Sources */,
-				1B1627751719DA65005AC505 /* RankStyle.m in Sources */,
-				1B1627781719DB4A005AC505 /* PresentationPresenter.m in Sources */,
-				1B16277B1719DC0E005AC505 /* Presenter.m in Sources */,
-				1B16277E1719DCBE005AC505 /* PresentationJudge.m in Sources */,
-				1B1627811719DD7C005AC505 /* Judge.m in Sources */,
-				1B1627881719DE1D005AC505 /* PresentationDBAccess.m in Sources */,
-				1B7A252D171C7E1500EB92D6 /* SectionDBAccess.m in Sources */,
-				1B7A2530171C7F6100EB92D6 /* SubSectionDBAccess.m in Sources */,
-				1B7A2533171C83FA00EB92D6 /* QuestionDBAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

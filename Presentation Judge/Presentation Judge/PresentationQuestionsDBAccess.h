@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
-@interface PreseantationQuestionsDBAccess : NSObject
+@interface PresentationQuestionsDBAccess : NSObject
 {
     sqlite3 *pqDB;
 }

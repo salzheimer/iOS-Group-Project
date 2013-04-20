@@ -6,12 +6,12 @@
 //  Copyright (c) 2013 S. Alzheimer, L. Malenfant, E. Englert. All rights reserved.
 //
 
-#import "PreseantationQuestionsDBAccess.h"
+#import "PresentationQuestionsDBAccess.h"
 #import "PresentationQuestion.h"    
-@implementation PreseantationQuestionsDBAccess
+@implementation PresentationQuestionsDBAccess
 -(NSMutableArray *) getPresentationQuestions
 {
-    NSMutableArray *preseantationQuestionArray =[[NSMutableArray alloc]init];
+    NSMutableArray *presentationQuestionArray =[[NSMutableArray alloc]init];
     
     @try
     {
@@ -42,7 +42,7 @@
             newSectionQuestion.PresentationID  = sqlite3_column_int(sqlStatment,1);
             newSectionQuestion.QuestionSectionID =sqlite3_column_int(sqlStatment,2);
                         
-            [preseantationQuestionArray addObject:newSectionQuestion];
+            [presentationQuestionArray addObject:newSectionQuestion];
         }
     }
     @catch(NSException *ex)
@@ -51,7 +51,7 @@
     }
     @finally
     {
-        return preseantationQuestionArray;
+        return presentationQuestionArray;
     }
     
 
