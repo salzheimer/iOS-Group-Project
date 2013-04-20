@@ -13,6 +13,6 @@
     NSInteger ID;
     NSString *StyleName;
 }
-@property (nonatomic,readonly) NSInteger ID;
+@property (nonatomic,assign) NSInteger ID;
 @property (nonatomic,retain)   NSString *StyleName;
 @end

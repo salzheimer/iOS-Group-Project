@@ -11,14 +11,14 @@
 @interface SectionQuestion : NSObject
 {
     NSInteger ID;
-    NSInteger *QuestionID;
-    NSInteger *SectionID;
-    NSInteger *SubSectionID;
+    NSInteger QuestionID;
+    NSInteger SectionID;
+    NSInteger SubSectionID;
     NSString *Comment;
 }
 @property (nonatomic,assign) NSInteger ID;
-@property (readwrite,assign) NSInteger *QuestionID;
-@property (readwrite,assign) NSInteger *SectionID;
-@property (readwrite,assign) NSInteger *SubSectionID;
+@property (nonatomic,assign) NSInteger QuestionID;
+@property (nonatomic,assign) NSInteger SectionID;
+@property (nonatomic,assign) NSInteger SubSectionID;
 @property (nonatomic,retain) NSString *Comment;
 @end

@@ -15,8 +15,8 @@
     NSString *LastName;
     NSString *Email;
 }
-@property (nonatomic,readonly) NSInteger ID;
-@property (readwrite,retain) NSString *FirstName;
-@property (readwrite,retain) NSString *LastName;
-@property (readwrite,retain) NSString *Email;
+@property (nonatomic,assign) NSInteger ID;
+@property (nonatomic,retain) NSString *FirstName;
+@property (nonatomic,retain) NSString *LastName;
+@property (nonatomic,retain) NSString *Email;
 @end

@@ -11,10 +11,10 @@
 @interface PresentationJudge : NSObject
 {
     NSInteger ID;
-    NSInteger *JudgeID;
-    NSInteger *PresentationID;
+    NSInteger JudgeID;
+    NSInteger PresentationID;
 }
-@property (nonatomic,readonly)   NSInteger ID;
-@property (readwrite,assign) NSInteger *JudgeID;
-@property (readwrite,assign) NSInteger *PresentationID;
+@property (nonatomic,assign)   NSInteger ID;
+@property (readwrite,assign) NSInteger JudgeID;
+@property (readwrite,assign) NSInteger PresentationID;
 @end
