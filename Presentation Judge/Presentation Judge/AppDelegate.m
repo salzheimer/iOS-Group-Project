@@ -14,6 +14,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    MyFirstViewController* firstVC = [[MyFirstViewController alloc] init];
+    MySecondViewController* secondVC = [[MySecondViewController alloc] init];
+    
+    UISplitViewController* splitVC = [[UISplitViewController alloc] init];
+    splitVC.viewControllers = [NSArray arrayWithObjects:firstVC, secondVC, nil];
+    
+    window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    window.rootViewController = splitVC;
+    [window makeKeyAndVisible];
+    
+    return YES;
+    
     UISplitViewController *splitViewController = (UISplitViewController *) self.window.rootViewController;
     splitViewController.delegate = [splitViewController.viewControllers lastObject];
     
