@@ -25,7 +25,6 @@
 }
 
 //THIS IS WHAT HAPPENS WHEN A SELECTION IS MADE IN THE PRESENTATION TABLE
-//MUST MAKE ADJUSTMENTS TO APPDELEGATE.M FILE IN didFinishLaunchingWithOptions METHOD
 - (void) didSelectPresentation:(AssignedPresentations *)presentation{
     
     //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Selected Presentation" message:presentation.presentationTitle delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
