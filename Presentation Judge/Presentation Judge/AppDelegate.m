@@ -15,18 +15,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    MyFirstViewController* firstVC = [[MyFirstViewController alloc] init];
-    MySecondViewController* secondVC = [[MySecondViewController alloc] init];
+    //UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     
-    UISplitViewController* splitVC = [[UISplitViewController alloc] init];
-    splitVC.viewControllers = [NSArray arrayWithObjects:firstVC, secondVC, nil];
+    //UIViewController* detail1 = [splitViewController.viewControllers objectAtIndex:1];
+    //UIViewController* detail2 = [splitViewController.storyboard instantiateViewControllerWithIdentifier:@"Detail 2 Root"];
     
-    window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    window.rootViewController = splitVC;
-    [window makeKeyAndVisible];
+    //self.masterDetailManager = [[MasterTableViewController alloc] initWithSplitViewController:splitViewController withDetailRootControllers:[NSArray arrayWithObjects:detail1,detail2,nil]];
     
-    return YES;
     
+    //MyFirstViewController* firstVC = [[MyFirstViewController alloc] init];
+    //MySecondViewController* secondVC = [[MySecondViewController alloc] init];
+    
+    //UISplitViewController* splitVC = [[UISplitViewController alloc] init];
+    //splitVC.viewControllers = [NSArray arrayWithObjects:firstVC, secondVC, nil];
+    
+    //window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //window.rootViewController = splitVC;
+    //[window makeKeyAndVisible];
+    
+    //For button to display tableview in horizontal position
     UISplitViewController *splitViewController = (UISplitViewController *) self.window.rootViewController;
     splitViewController.delegate = [splitViewController.viewControllers lastObject];
     

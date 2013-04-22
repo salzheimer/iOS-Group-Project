@@ -14,6 +14,7 @@
 
 @implementation DetailViewController
 
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,10 +24,12 @@
     return self;
 }
 
-
 //THIS IS WHAT HAPPENS WHEN A SELECTION IS MADE IN THE PRESENTATION TABLE
 //MUST MAKE ADJUSTMENTS TO APPDELEGATE.M FILE IN didFinishLaunchingWithOptions METHOD
 - (void) didSelectPresentation:(AssignedPresentations *)presentation{
+    
+    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Selected Presentation" message:presentation.presentationTitle delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
+    //[alert show];
     
     self.presentationLabel.text = presentation.presentationTitle;
     
@@ -36,10 +39,6 @@
     self.judgeName.text = @"Judge Name: Eden Englert";
     self.judgeEmail.text = @"Judge Email: eenglert@uiowa.edu";
 
-    
-    
-    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Selected Presentation" message:presentation.presentationTitle delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
-    //[alert show];
 }
 
 - (void)viewDidLoad
@@ -55,7 +54,7 @@
 }
 
 - (void) splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc{
-    barButtonItem.title = @"Assigned Presentations";
+    barButtonItem.title = @"Presentations";
     NSMutableArray *items = [[self.toolbar items] mutableCopy];
     [items insertObject:barButtonItem atIndex:0];
     [self.toolbar setItems:items animated:YES];

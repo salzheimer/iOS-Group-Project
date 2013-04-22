@@ -14,6 +14,9 @@
     UIPopoverController *masterPopoverController;
     
 }
+
+- (void) didSelectPresentation:(AssignedPresentations *)presentation;
+
 @property (nonatomic, strong) IBOutlet UIToolbar *toolbar;
 @property (weak, nonatomic) IBOutlet UILabel *presentationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *presentationTitleLabel;

@@ -8,12 +8,22 @@
 
 #import "MasterTableViewController.h"
 #import "AssignedPresentations.h"
+#import "DetailViewController.h"
 
 @interface MasterTableViewController ()
+@property (strong, nonatomic) DetailViewController *detailVC;
 
 @end
 
 @implementation MasterTableViewController
+
+-(DetailViewController *) detailVC{
+    id vc = [self.splitViewController.viewControllers lastObject];
+    if(![vc isKindOfClass:[DetailViewController class]]){
+        vc = nil;
+    }
+    return vc;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -171,7 +181,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     AssignedPresentations *selectedPresentation = [presentationTitles objectAtIndex:[indexPath row]];
+    [self.detailVC didSelectPresentation:selectedPresentation];
     [self.delegate didSelectPresentation:selectedPresentation];
+    
 }
 
 @end
