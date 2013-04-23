@@ -9,19 +9,9 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>PresentationJudgeTests.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1B753E8A172316E000CC6E4E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>F2BDF9DF1710F1BB00902929</key>
 		<dict>
 			<key>primary</key>

@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BCF40091725D9E200B684CA /* QuestionRanking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF40081725D9E200B684CA /* QuestionRanking.m */; };
-		1BCF400C1725E86900B684CA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF400B1725E86900B684CA /* libsqlite3.dylib */; };
+		1B16278A1719EC53005AC505 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1627891719EC53005AC505 /* libsqlite3.0.dylib */; };
+		1B753E8D172316E000CC6E4E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B753E8C172316E000CC6E4E /* SenTestingKit.framework */; };
+		1B753E8E172316E000CC6E4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E31710F1BB00902929 /* UIKit.framework */; };
+		1B753E8F172316E000CC6E4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E51710F1BB00902929 /* Foundation.framework */; };
+		1B753E95172316E000CC6E4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B753E93172316E000CC6E4E /* InfoPlist.strings */; };
+		1B753E98172316E000CC6E4E /* PresentationJudgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753E97172316E000CC6E4E /* PresentationJudgeTests.m */; };
+		1B753F2317231BB300CC6E4E /* JudgeDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F0E17231BB300CC6E4E /* JudgeDBAccess.m */; };
+		1B753F2417231BB300CC6E4E /* PresentationDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F1017231BB300CC6E4E /* PresentationDBAccess.m */; };
+		1B753F2517231BB300CC6E4E /* PresentationJudgeDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F1217231BB300CC6E4E /* PresentationJudgeDBAccess.m */; };
+		1B753F2617231BB300CC6E4E /* PresentationQuestionsDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F1417231BB300CC6E4E /* PresentationQuestionsDBAccess.m */; };
+		1B753F2717231BB300CC6E4E /* PresenterDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F1617231BB300CC6E4E /* PresenterDBAccess.m */; };
+		1B753F2817231BB300CC6E4E /* QuestionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F1817231BB300CC6E4E /* QuestionDBAccess.m */; };
+		1B753F2917231BB300CC6E4E /* QuestionRankingDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F1A17231BB300CC6E4E /* QuestionRankingDBAccess.m */; };
+		1B753F2A17231BB300CC6E4E /* RankStyleDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F1C17231BB300CC6E4E /* RankStyleDBAccess.m */; };
+		1B753F2B17231BB300CC6E4E /* SectionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F1E17231BB300CC6E4E /* SectionDBAccess.m */; };
+		1B753F2C17231BB300CC6E4E /* SectionQuestionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F2017231BB300CC6E4E /* SectionQuestionDBAccess.m */; };
+		1B753F2D17231BB300CC6E4E /* SubSectionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B753F2217231BB300CC6E4E /* SubSectionDBAccess.m */; };
 		930E96B2171CCB1F00623A25 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930E96B1171CCB1F00623A25 /* MessageUI.framework */; };
 		F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E64F1712140400AF7A18 /* MasterTableViewController.m */; };
 		F207E6531712148700AF7A18 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E6521712148700AF7A18 /* DetailViewController.m */; };
@@ -25,6 +40,27 @@
 		F2BDF9FD1710F1BB00902929 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BDF9FB1710F1BB00902929 /* MainStoryboard.storyboard */; };
 		F2BDFA001710F1BB00902929 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2BDF9FF1710F1BB00902929 /* ViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		1B753E9F1723175900CC6E4E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = wrapper.xcdatamodel;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		1B753E9D1723173600CC6E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2BDF9D81710F1BA00902929 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2BDF9DF1710F1BB00902929;
+			remoteInfo = "Presentation Judge";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1B1627891719EC53005AC505 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
@@ -73,10 +109,35 @@
 		1B753E831723129900CC6E4E /* SubSectionDBAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSectionDBAccess.h; sourceTree = "<group>"; };
 		1B753E841723129900CC6E4E /* SubSectionDBAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSectionDBAccess.m; sourceTree = "<group>"; };
 		1B753E851723135400CC6E4E /* PresentationJudge.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = PresentationJudge.sqlite; path = DB/PresentationJudge.sqlite; sourceTree = "<group>"; };
+		1B753E8B172316E000CC6E4E /* PresentationJudgeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationJudgeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B753E8C172316E000CC6E4E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1BCF40071725D9E200B684CA /* QuestionRanking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionRanking.h; sourceTree = "<group>"; };
-		1BCF40081725D9E200B684CA /* QuestionRanking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionRanking.m; sourceTree = "<group>"; };
-		1BCF400B1725E86900B684CA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1B753E92172316E000CC6E4E /* PresentationJudgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PresentationJudgeTests-Info.plist"; sourceTree = "<group>"; };
+		1B753E94172316E000CC6E4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B753E96172316E000CC6E4E /* PresentationJudgeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationJudgeTests.h; sourceTree = "<group>"; };
+		1B753E97172316E000CC6E4E /* PresentationJudgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationJudgeTests.m; sourceTree = "<group>"; };
+		1B753E99172316E000CC6E4E /* PresentationJudgeTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PresentationJudgeTests-Prefix.pch"; sourceTree = "<group>"; };
+		1B753F0D17231BB300CC6E4E /* JudgeDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JudgeDBAccess.h; sourceTree = "<group>"; };
+		1B753F0E17231BB300CC6E4E /* JudgeDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JudgeDBAccess.m; sourceTree = "<group>"; };
+		1B753F0F17231BB300CC6E4E /* PresentationDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationDBAccess.h; sourceTree = "<group>"; };
+		1B753F1017231BB300CC6E4E /* PresentationDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationDBAccess.m; sourceTree = "<group>"; };
+		1B753F1117231BB300CC6E4E /* PresentationJudgeDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationJudgeDBAccess.h; sourceTree = "<group>"; };
+		1B753F1217231BB300CC6E4E /* PresentationJudgeDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationJudgeDBAccess.m; sourceTree = "<group>"; };
+		1B753F1317231BB300CC6E4E /* PresentationQuestionsDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationQuestionsDBAccess.h; sourceTree = "<group>"; };
+		1B753F1417231BB300CC6E4E /* PresentationQuestionsDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationQuestionsDBAccess.m; sourceTree = "<group>"; };
+		1B753F1517231BB300CC6E4E /* PresenterDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresenterDBAccess.h; sourceTree = "<group>"; };
+		1B753F1617231BB300CC6E4E /* PresenterDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresenterDBAccess.m; sourceTree = "<group>"; };
+		1B753F1717231BB300CC6E4E /* QuestionDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDBAccess.h; sourceTree = "<group>"; };
+		1B753F1817231BB300CC6E4E /* QuestionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDBAccess.m; sourceTree = "<group>"; };
+		1B753F1917231BB300CC6E4E /* QuestionRankingDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionRankingDBAccess.h; sourceTree = "<group>"; };
+		1B753F1A17231BB300CC6E4E /* QuestionRankingDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionRankingDBAccess.m; sourceTree = "<group>"; };
+		1B753F1B17231BB300CC6E4E /* RankStyleDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankStyleDBAccess.h; sourceTree = "<group>"; };
+		1B753F1C17231BB300CC6E4E /* RankStyleDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankStyleDBAccess.m; sourceTree = "<group>"; };
+		1B753F1D17231BB300CC6E4E /* SectionDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionDBAccess.h; sourceTree = "<group>"; };
+		1B753F1E17231BB300CC6E4E /* SectionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionDBAccess.m; sourceTree = "<group>"; };
+		1B753F1F17231BB300CC6E4E /* SectionQuestionDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionQuestionDBAccess.h; sourceTree = "<group>"; };
+		1B753F2017231BB300CC6E4E /* SectionQuestionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionQuestionDBAccess.m; sourceTree = "<group>"; };
+		1B753F2117231BB300CC6E4E /* SubSectionDBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubSectionDBAccess.h; sourceTree = "<group>"; };
+		1B753F2217231BB300CC6E4E /* SubSectionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubSectionDBAccess.m; sourceTree = "<group>"; };
 		930E96B1171CCB1F00623A25 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F207E64E1712140400AF7A18 /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
 		F207E64F1712140400AF7A18 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
@@ -103,12 +164,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B753E87172316E000CC6E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B753E8D172316E000CC6E4E /* SenTestingKit.framework in Frameworks */,
+				1B753E8E172316E000CC6E4E /* UIKit.framework in Frameworks */,
+				1B753E8F172316E000CC6E4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2BDF9DD1710F1BB00902929 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BCF400C1725E86900B684CA /* libsqlite3.dylib in Frameworks */,
 				930E96B2171CCB1F00623A25 /* MessageUI.framework in Frameworks */,
+				1B16278A1719EC53005AC505 /* libsqlite3.0.dylib in Frameworks */,
 				F2BDF9E41710F1BB00902929 /* UIKit.framework in Frameworks */,
 				F2BDF9E61710F1BB00902929 /* Foundation.framework in Frameworks */,
 				F2BDF9E81710F1BB00902929 /* CoreGraphics.framework in Frameworks */,
@@ -121,8 +192,6 @@
 		1B16275F1719CBE6005AC505 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1BCF40071725D9E200B684CA /* QuestionRanking.h */,
-				1BCF40081725D9E200B684CA /* QuestionRanking.m */,
 				1B753E591723126600CC6E4E /* Judge.h */,
 				1B753E5A1723126600CC6E4E /* Judge.m */,
 				1B753E5B1723126600CC6E4E /* Presentation.h */,
@@ -152,6 +221,28 @@
 		1B1627661719CDD8005AC505 /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				1B753F0D17231BB300CC6E4E /* JudgeDBAccess.h */,
+				1B753F0E17231BB300CC6E4E /* JudgeDBAccess.m */,
+				1B753F0F17231BB300CC6E4E /* PresentationDBAccess.h */,
+				1B753F1017231BB300CC6E4E /* PresentationDBAccess.m */,
+				1B753F1117231BB300CC6E4E /* PresentationJudgeDBAccess.h */,
+				1B753F1217231BB300CC6E4E /* PresentationJudgeDBAccess.m */,
+				1B753F1317231BB300CC6E4E /* PresentationQuestionsDBAccess.h */,
+				1B753F1417231BB300CC6E4E /* PresentationQuestionsDBAccess.m */,
+				1B753F1517231BB300CC6E4E /* PresenterDBAccess.h */,
+				1B753F1617231BB300CC6E4E /* PresenterDBAccess.m */,
+				1B753F1717231BB300CC6E4E /* QuestionDBAccess.h */,
+				1B753F1817231BB300CC6E4E /* QuestionDBAccess.m */,
+				1B753F1917231BB300CC6E4E /* QuestionRankingDBAccess.h */,
+				1B753F1A17231BB300CC6E4E /* QuestionRankingDBAccess.m */,
+				1B753F1B17231BB300CC6E4E /* RankStyleDBAccess.h */,
+				1B753F1C17231BB300CC6E4E /* RankStyleDBAccess.m */,
+				1B753F1D17231BB300CC6E4E /* SectionDBAccess.h */,
+				1B753F1E17231BB300CC6E4E /* SectionDBAccess.m */,
+				1B753F1F17231BB300CC6E4E /* SectionQuestionDBAccess.h */,
+				1B753F2017231BB300CC6E4E /* SectionQuestionDBAccess.m */,
+				1B753F2117231BB300CC6E4E /* SubSectionDBAccess.h */,
+				1B753F2217231BB300CC6E4E /* SubSectionDBAccess.m */,
 				1B753E6F1723129900CC6E4E /* JudgeDBAccess.h */,
 				1B753E701723129900CC6E4E /* JudgeDBAccess.m */,
 				1B753E711723129900CC6E4E /* PresentationQuestionsDBAccess.h */,
@@ -178,13 +269,33 @@
 			name = DataAccess;
 			sourceTree = "<group>";
 		};
+		1B753E90172316E000CC6E4E /* PresentationJudgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B753E96172316E000CC6E4E /* PresentationJudgeTests.h */,
+				1B753E97172316E000CC6E4E /* PresentationJudgeTests.m */,
+				1B753E91172316E000CC6E4E /* Supporting Files */,
+			);
+			path = PresentationJudgeTests;
+			sourceTree = "<group>";
+		};
+		1B753E91172316E000CC6E4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B753E92172316E000CC6E4E /* PresentationJudgeTests-Info.plist */,
+				1B753E93172316E000CC6E4E /* InfoPlist.strings */,
+				1B753E99172316E000CC6E4E /* PresentationJudgeTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F2BDF9D71710F1BA00902929 = {
 			isa = PBXGroup;
 			children = (
-				1BCF400B1725E86900B684CA /* libsqlite3.dylib */,
 				1B753E851723135400CC6E4E /* PresentationJudge.sqlite */,
 				1B1627891719EC53005AC505 /* libsqlite3.0.dylib */,
 				F2BDF9E91710F1BB00902929 /* Presentation Judge */,
+				1B753E90172316E000CC6E4E /* PresentationJudgeTests */,
 				F2BDF9E21710F1BB00902929 /* Frameworks */,
 				F2BDF9E11710F1BB00902929 /* Products */,
 			);
@@ -194,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				F2BDF9E01710F1BB00902929 /* Presentation Judge.app */,
+				1B753E8B172316E000CC6E4E /* PresentationJudgeTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +360,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1B753E8A172316E000CC6E4E /* PresentationJudgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B753E9A172316E000CC6E4E /* Build configuration list for PBXNativeTarget "PresentationJudgeTests" */;
+			buildPhases = (
+				1B753E86172316E000CC6E4E /* Sources */,
+				1B753E87172316E000CC6E4E /* Frameworks */,
+				1B753E88172316E000CC6E4E /* Resources */,
+				1B753E89172316E000CC6E4E /* ShellScript */,
+			);
+			buildRules = (
+				1B753E9F1723175900CC6E4E /* PBXBuildRule */,
+			);
+			dependencies = (
+				1B753E9E1723173600CC6E4E /* PBXTargetDependency */,
+			);
+			name = PresentationJudgeTests;
+			productName = PresentationJudgeTests;
+			productReference = 1B753E8B172316E000CC6E4E /* PresentationJudgeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		F2BDF9DF1710F1BB00902929 /* Presentation Judge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2BDFA031710F1BB00902929 /* Build configuration list for PBXNativeTarget "Presentation Judge" */;
@@ -287,11 +419,20 @@
 			projectRoot = "";
 			targets = (
 				F2BDF9DF1710F1BB00902929 /* Presentation Judge */,
+				1B753E8A172316E000CC6E4E /* PresentationJudgeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B753E88172316E000CC6E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B753E95172316E000CC6E4E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2BDF9DE1710F1BB00902929 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,7 +447,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B753E89172316E000CC6E4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1B753E86172316E000CC6E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B753E98172316E000CC6E4E /* PresentationJudgeTests.m in Sources */,
+				1B753F2317231BB300CC6E4E /* JudgeDBAccess.m in Sources */,
+				1B753F2417231BB300CC6E4E /* PresentationDBAccess.m in Sources */,
+				1B753F2517231BB300CC6E4E /* PresentationJudgeDBAccess.m in Sources */,
+				1B753F2617231BB300CC6E4E /* PresentationQuestionsDBAccess.m in Sources */,
+				1B753F2717231BB300CC6E4E /* PresenterDBAccess.m in Sources */,
+				1B753F2817231BB300CC6E4E /* QuestionDBAccess.m in Sources */,
+				1B753F2917231BB300CC6E4E /* QuestionRankingDBAccess.m in Sources */,
+				1B753F2A17231BB300CC6E4E /* RankStyleDBAccess.m in Sources */,
+				1B753F2B17231BB300CC6E4E /* SectionDBAccess.m in Sources */,
+				1B753F2C17231BB300CC6E4E /* SectionQuestionDBAccess.m in Sources */,
+				1B753F2D17231BB300CC6E4E /* SubSectionDBAccess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F2BDF9DC1710F1BB00902929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,13 +493,28 @@
 				F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */,
 				F207E6531712148700AF7A18 /* DetailViewController.m in Sources */,
 				F207E65617121B9B00AF7A18 /* AssignedPresentations.m in Sources */,
-				1BCF40091725D9E200B684CA /* QuestionRanking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1B753E9E1723173600CC6E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2BDF9DF1710F1BB00902929 /* Presentation Judge */;
+			targetProxy = 1B753E9D1723173600CC6E4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		1B753E93172316E000CC6E4E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B753E94172316E000CC6E4E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		F2BDF9EC1710F1BB00902929 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,6 +534,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1B753E9B172316E000CC6E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PresentationJudgeTests/PresentationJudgeTests-Prefix.pch";
+				INFOPLIST_FILE = "PresentationJudgeTests/PresentationJudgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1B753E9C172316E000CC6E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PresentationJudgeTests/PresentationJudgeTests-Prefix.pch";
+				INFOPLIST_FILE = "PresentationJudgeTests/PresentationJudgeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		F2BDFA011710F1BB00902929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,6 +649,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B753E9A172316E000CC6E4E /* Build configuration list for PBXNativeTarget "PresentationJudgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B753E9B172316E000CC6E4E /* Debug */,
+				1B753E9C172316E000CC6E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F2BDF9DB1710F1BA00902929 /* Build configuration list for PBXProject "Presentation Judge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
