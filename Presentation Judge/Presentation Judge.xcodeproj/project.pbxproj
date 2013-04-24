@@ -13,6 +13,7 @@
 		F207E6501712140400AF7A18 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E64F1712140400AF7A18 /* MasterTableViewController.m */; };
 		F207E6531712148700AF7A18 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E6521712148700AF7A18 /* DetailViewController.m */; };
 		F207E65617121B9B00AF7A18 /* AssignedPresentations.m in Sources */ = {isa = PBXBuildFile; fileRef = F207E65517121B9B00AF7A18 /* AssignedPresentations.m */; };
+		F240968617270F7100814A7E /* PresentationCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F240968517270F7100814A7E /* PresentationCategoriesViewController.m */; };
 		F2BDF9E41710F1BB00902929 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E31710F1BB00902929 /* UIKit.framework */; };
 		F2BDF9E61710F1BB00902929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E51710F1BB00902929 /* Foundation.framework */; };
 		F2BDF9E81710F1BB00902929 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BDF9E71710F1BB00902929 /* CoreGraphics.framework */; };
@@ -84,6 +85,8 @@
 		F207E6521712148700AF7A18 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		F207E65417121B9B00AF7A18 /* AssignedPresentations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignedPresentations.h; sourceTree = "<group>"; };
 		F207E65517121B9B00AF7A18 /* AssignedPresentations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignedPresentations.m; sourceTree = "<group>"; };
+		F240968417270F7100814A7E /* PresentationCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationCategoriesViewController.h; sourceTree = "<group>"; };
+		F240968517270F7100814A7E /* PresentationCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationCategoriesViewController.m; sourceTree = "<group>"; };
 		F2BDF9E01710F1BB00902929 /* Presentation Judge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Presentation Judge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BDF9E31710F1BB00902929 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F2BDF9E51710F1BB00902929 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -228,6 +231,8 @@
 		F2BDF9EA1710F1BB00902929 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F240968417270F7100814A7E /* PresentationCategoriesViewController.h */,
+				F240968517270F7100814A7E /* PresentationCategoriesViewController.m */,
 				F207E64E1712140400AF7A18 /* MasterTableViewController.h */,
 				F207E64F1712140400AF7A18 /* MasterTableViewController.m */,
 				F2BDF9EB1710F1BB00902929 /* Presentation Judge-Info.plist */,
@@ -318,6 +323,7 @@
 				F207E6531712148700AF7A18 /* DetailViewController.m in Sources */,
 				F207E65617121B9B00AF7A18 /* AssignedPresentations.m in Sources */,
 				1BCF40091725D9E200B684CA /* QuestionRanking.m in Sources */,
+				F240968617270F7100814A7E /* PresentationCategoriesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
