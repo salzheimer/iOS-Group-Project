@@ -26,6 +26,21 @@
 
 //THIS IS WHAT HAPPENS WHEN A SELECTION IS MADE IN THE PRESENTATION TABLE
 
+- (void) didSelectPresentation:(AssignedPresentations *)presentation{
+    
+    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Selected Presentation" message:presentation.presentationTitle delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
+    //[alert show];
+    
+    self.presentationLabel.text = presentation.presentationTitle;
+    
+    self.presentationTitleLabel.text = [NSString stringWithFormat:@"Presentation Name: %@", presentation.presentationTitle];
+    self.presenterName.text = [NSString stringWithFormat:@"Presenter Name: %@", presentation.presenterName];
+    self.presenterEmail.text = [NSString stringWithFormat:@"Presenter Email: %@", presentation.presenterEmail];
+    self.judgeName.text = @"Judge Name: Eden Englert";
+    self.judgeEmail.text = @"Judge Email: eenglert@uiowa.edu";
+    
+}
+
 //pulling up the email dialogue
 - (IBAction)openMail:(id)sender
 {
@@ -34,9 +49,9 @@
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
         mailer.mailComposeDelegate = self;
         [mailer setSubject:@"Presentation Judge: Test Test!"];
-        NSArray *toRecipients = [NSArray arrayWithObjects:@"lemalenfant@gmail.com", @"lauren-malenfant@uiowa.edu", nil];
+        NSArray *toRecipients = [NSArray arrayWithObjects: @"lauren-malenfant@uiowa.edu", nil];
         [mailer setToRecipients:toRecipients];
-        NSString *emailBody = @"Test, test!";
+        NSString *emailBody = @"Test, test! So far only able to send emails to hard-coded email addresses, but I hope to have the presenter email and/or the judge email instead sometime soon!";
         [mailer setMessageBody:emailBody isHTML:NO];
         mailer.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentViewController:mailer animated:YES completion:nil];
@@ -79,20 +94,7 @@
 }
 
 
-- (void) didSelectPresentation:(AssignedPresentations *)presentation{
-    
-    //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Selected Presentation" message:presentation.presentationTitle delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
-    //[alert show];
-    
-    self.presentationLabel.text = presentation.presentationTitle;
-    
-    self.presentationTitleLabel.text = [NSString stringWithFormat:@"Presentation Name: %@", presentation.presentationTitle];
-    self.presenterName.text = [NSString stringWithFormat:@"Presenter Name: %@", presentation.presenterName];
-    self.presenterEmail.text = [NSString stringWithFormat:@"Presenter Email: %@", presentation.presenterEmail];
-    self.judgeName.text = @"Judge Name: Eden Englert";
-    self.judgeEmail.text = @"Judge Email: eenglert@uiowa.edu";
 
-}
 
 - (void)viewDidLoad
 {
