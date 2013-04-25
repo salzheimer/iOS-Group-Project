@@ -51,7 +51,7 @@
         [mailer setSubject:@"Presentation Judge: Test Test!"];
         NSArray *toRecipients = [NSArray arrayWithObjects: @"lauren-malenfant@uiowa.edu", nil];
         [mailer setToRecipients:toRecipients];
-        NSString *emailBody = @"Test, test! So far only able to send emails to hard-coded email addresses, but I hope to have the presenter email and/or the judge email instead sometime soon!";
+        NSString *emailBody = @"Test, test! So far, the emails presented are just hard-coded in. In the future, this will have the judge's email and/or the presenter's email instead!";
         [mailer setMessageBody:emailBody isHTML:NO];
         mailer.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentViewController:mailer animated:YES completion:nil];
