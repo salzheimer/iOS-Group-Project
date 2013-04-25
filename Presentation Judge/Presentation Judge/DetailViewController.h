@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "MasterTableViewController.h"
+#import <MessageUI/MessageUI.h>
 
 //responsible for adding different events
-@interface DetailViewController : UIViewController<UISplitViewControllerDelegate, PresentationDelegate>{
+@interface DetailViewController : UIViewController<UISplitViewControllerDelegate, PresentationDelegate, MFMailComposeViewControllerDelegate>{
     UIPopoverController *masterPopoverController;
-    
 }
+//the email button
+- (IBAction)openMail:(id)sender;
 
 - (void) didSelectPresentation:(AssignedPresentations *)presentation;
 
