@@ -28,7 +28,7 @@
             {
                 NSLog(@"An error occured.");
             }
-            const char *sql= "Select id,title,scalelowerbound,scaleupperbound,comments from presentation";
+            const char *sql= "Select id,title,ranksyleid,scalelowerbound,scaleupperbound,comments from presentation";
             sqlite3_stmt *sqlStatment;
             if(sqlite3_prepare(PresentationDB,sql,-1,&sqlStatment,NULL)!= SQLITE_OK)
             {

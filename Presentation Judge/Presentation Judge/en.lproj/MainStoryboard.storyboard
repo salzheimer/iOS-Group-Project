@@ -459,6 +459,7 @@
             <point key="canvasLocation" x="-437" y="-650"/>
         </scene>
     </scenes>
+<<<<<<< HEAD
     <classes>
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
@@ -484,6 +485,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PresentationCategoriesViewController.h"/>
         </class>
     </classes>
+=======
+>>>>>>> a
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
