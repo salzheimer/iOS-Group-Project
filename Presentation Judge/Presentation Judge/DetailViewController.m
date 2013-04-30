@@ -51,7 +51,7 @@
         [mailer setSubject:@"Presentation Judge: Test Test!"];
         NSArray *toRecipients = [NSArray arrayWithObjects: @"lauren-malenfant@uiowa.edu", nil];
         [mailer setToRecipients:toRecipients];
-        NSString *emailBody = @"Test, test! So far, the emails presented are just hard-coded in. In the future, this will have the judge's email and/or the presenter's email instead!";
+        NSString *emailBody = @"So far, the emails presented are just hard-coded in. In the future, this will have the judge's email and/or the presenter's email instead. Also, you can't send an email from your iOS Simulator.";
         [mailer setMessageBody:emailBody isHTML:NO];
         mailer.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentViewController:mailer animated:YES completion:nil];
@@ -68,11 +68,11 @@
         
     }
 }
-//the email composer
+//handling errors
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
 {
     switch (result)
-    { //working with drafts, etc
+    { //responses
         case MFMailComposeResultCancelled:
             NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued.");
             break;
@@ -89,7 +89,6 @@
             NSLog(@"Mail not sent.");
             break;
     }
-    // Remove the mail view
     [self dismissViewControllerAnimated:NO completion:nil];
 }
 
