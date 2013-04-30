@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B610AC11728B1B8001AA9E0 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B610AC01728B1B8001AA9E0 /* CategoryViewController.m */; };
+		1B738D70172F3EC400A3B962 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738D6F172F3EC400A3B962 /* QuestionViewController.m */; };
+		1B738D72172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B738D71172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg */; };
 		1BCF40891725F34D00B684CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF40881725F34D00B684CA /* UIKit.framework */; };
 		1BCF408B1725F34D00B684CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF408A1725F34D00B684CA /* Foundation.framework */; };
 		1BCF408D1725F34D00B684CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF408C1725F34D00B684CA /* CoreGraphics.framework */; };
@@ -65,6 +67,9 @@
 /* Begin PBXFileReference section */
 		1B610ABF1728B1B8001AA9E0 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
 		1B610AC01728B1B8001AA9E0 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		1B738D6E172F3EC400A3B962 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		1B738D6F172F3EC400A3B962 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		1B738D71172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1385593-gavel-and-clipboard-with-space-for-messages.jpg"; sourceTree = "<group>"; };
 		1BCF40851725F34D00B684CA /* mstrDetailTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mstrDetailTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCF40881725F34D00B684CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1BCF408A1725F34D00B684CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -211,6 +216,8 @@
 				1BCF408F1725F34D00B684CA /* Supporting Files */,
 				1B610ABF1728B1B8001AA9E0 /* CategoryViewController.h */,
 				1B610AC01728B1B8001AA9E0 /* CategoryViewController.m */,
+				1B738D6E172F3EC400A3B962 /* QuestionViewController.h */,
+				1B738D6F172F3EC400A3B962 /* QuestionViewController.m */,
 			);
 			path = mstrDetailTest2;
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 		1BCF408F1725F34D00B684CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B738D71172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg */,
 				1BCF40901725F34D00B684CA /* mstrDetailTest2-Info.plist */,
 				1BCF40911725F34E00B684CA /* InfoPlist.strings */,
 				1BCF40941725F34E00B684CA /* main.m */,
@@ -385,6 +393,7 @@
 				1BCF409F1725F34E00B684CA /* Default-568h@2x.png in Resources */,
 				1BCF40A21725F34E00B684CA /* MainStoryboard.storyboard in Resources */,
 				1BCF41121725F46400B684CA /* PresentationJudge.sqlite in Resources */,
+				1B738D72172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +456,7 @@
 				1BCF410C1725F41A00B684CA /* SectionQuestionDBAccess.m in Sources */,
 				1BCF410D1725F41A00B684CA /* SubSectionDBAccess.m in Sources */,
 				1B610AC11728B1B8001AA9E0 /* CategoryViewController.m in Sources */,
+				1B738D70172F3EC400A3B962 /* QuestionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

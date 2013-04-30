@@ -108,11 +108,28 @@
                         <outlet property="lblPresenter1Name" destination="Szb-7T-shd" id="XSV-oD-oO8"/>
                         <outlet property="lblPresenter2Email" destination="CZw-4m-mVk" id="6jg-T4-voY"/>
                         <outlet property="lblPresenter2Name" destination="bvc-Ch-HsN" id="K42-tg-VvG"/>
+                        <segue destination="wJM-XM-c1P" kind="push" id="V4d-b4-NJo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="448" y="248"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Qb-Rn-2zR">
+            <objects>
+                <viewController id="wJM-XM-c1P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GBW-c3-ATh">
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jKF-98-szc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Kk-XD-jvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="237"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="18">
