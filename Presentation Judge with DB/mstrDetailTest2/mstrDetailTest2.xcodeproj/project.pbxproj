@@ -52,6 +52,7 @@
 		1BCF410D1725F41A00B684CA /* SubSectionDBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCF41021725F41A00B684CA /* SubSectionDBAccess.m */; };
 		1BCF41101725F44200B684CA /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF410F1725F44200B684CA /* libsqlite3.0.dylib */; };
 		1BCF41121725F46400B684CA /* PresentationJudge.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 1BCF41111725F46400B684CA /* PresentationJudge.sqlite */; };
+		F2F9219E173493D40050B2EA /* gavel_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2F9219D173493D40050B2EA /* gavel_1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		1BCF41021725F41A00B684CA /* SubSectionDBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubSectionDBAccess.m; sourceTree = "<group>"; };
 		1BCF410F1725F44200B684CA /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		1BCF41111725F46400B684CA /* PresentationJudge.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = PresentationJudge.sqlite; path = mstrDetailTest2/PresentationJudge.sqlite; sourceTree = "<group>"; };
+		F2F9219D173493D40050B2EA /* gavel_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gavel_1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		1BCF408F1725F34D00B684CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F2F9219D173493D40050B2EA /* gavel_1.jpg */,
 				1B738D71172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg */,
 				1BCF40901725F34D00B684CA /* mstrDetailTest2-Info.plist */,
 				1BCF40911725F34E00B684CA /* InfoPlist.strings */,
@@ -394,6 +397,7 @@
 				1BCF40A21725F34E00B684CA /* MainStoryboard.storyboard in Resources */,
 				1BCF41121725F46400B684CA /* PresentationJudge.sqlite in Resources */,
 				1B738D72172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg in Resources */,
+				F2F9219E173493D40050B2EA /* gavel_1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

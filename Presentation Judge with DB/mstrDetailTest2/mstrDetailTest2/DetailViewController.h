@@ -23,5 +23,7 @@
 @property (weak,nonatomic) IBOutlet UILabel *lblJudge1Email;
 @property (weak,nonatomic) IBOutlet UILabel *lblJudge2Name;
 @property (weak,nonatomic) IBOutlet UILabel *lblJudge2Email;
+@property (weak, nonatomic) IBOutlet UIImageView *gavelImage;
+@property (weak, nonatomic) IBOutlet UITextView *instructionsView;
 
 @end

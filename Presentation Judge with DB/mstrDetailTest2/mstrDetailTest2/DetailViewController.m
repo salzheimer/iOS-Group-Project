@@ -63,6 +63,9 @@
 }
 -(void) loadSelectedPresentation: (Presentation *) presentation
 {
+    
+    self.gavelImage.hidden = TRUE;
+    self.instructionsView.hidden = TRUE;
     self.lblPresentationTitle.text = [NSString stringWithFormat:@"Presentation Title: %@",presentation.Title];
     //get Presenter Information
     
