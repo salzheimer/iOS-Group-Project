@@ -279,6 +279,33 @@
     <resources>
         <image name="gavel_1.jpg" width="482" height="317"/>
     </resources>
+    <classes>
+        <class className="CategoryViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CategoryViewController.h"/>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="gavelImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="instructionsView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="lblJudge1Email" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblJudge1Name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblJudge2Email" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblJudge2Name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblPresentationTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblPresenter1Email" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblPresenter1Name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblPresenter2Email" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblPresenter2Name" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
