@@ -7,6 +7,12 @@
 //
 
 #import "QuestionViewController.h"
+#import "SectionQuestionDBAccess.h"
+#import "SectionQuestion.h"
+#import "SubSection.h"
+#import "SubSectionDBAccess.h"
+#import "Question.h"
+#import "QuestionDBAccess.h"
 
 @interface QuestionViewController ()
 
@@ -27,6 +33,28 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+}
+-(void) loadQuestionsForSection:(int) sectionID
+{
+    SectionQuestionDBAccess * secQuestions =[[SectionQuestionDBAccess alloc]init];
+    QuestionDBAccess *questionDB =[[QuestionDBAccess alloc]init];
+    SubSectionDBAccess *subSectionDB =[[SubSectionDBAccess alloc]init];
+    NSMutableArray *questions= [secQuestions getSectionQuestionsBySectionID:sectionID];
+    
+    for(int i=0;i<questions.count;i++)
+    {
+        SectionQuestion * q = questions[i];
+        Question *currentQuestion = [questionDB getQuestionByID:q.QuestionID];
+        SubSection *subSection = [subSectionDB getSubSectionByID: q.SubSectionID];
+        
+        UILabel *lblSubSection = [[UILabel alloc]init];
+        UILabel *lblQuestion = [[UILabel alloc]init];
+        lblQuestion.text = currentQuestion.Question;
+        lblSubSection.text = subSection.SubSection_Name;
+        [self.view addSubview:lblSubSection];
+        [self.view addSubview:lblQuestion];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -10,7 +10,7 @@
 #import "SectionDBAccess.h"
 #import "SectionQuestionDBAccess.h"
 #import "Section.h"
-
+#import "QuestionViewController.h"
 @interface CategoryViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) SectionDBAccess *sectionList;
 
@@ -33,7 +33,7 @@
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+    self.questionController = (QuestionViewController *)  [[self.splitViewController.viewControllers lastObject] topViewController];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -123,6 +123,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+      NSInteger cellNum = indexPath.row;
+    Section *sec =[self.sectionList getPresentation_SectionForIndex:indexPath.row presentationID: presentationID];
+    
+    //get questions
+    [self.questionController loadQuestionsForSection:sec.ID ];
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];

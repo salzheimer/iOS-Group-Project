@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
+#import "SubSection.h"
 @interface SubSectionDBAccess : NSObject
 {
     sqlite3 *SubSectionDB;
 }
 -(NSMutableArray *) getSubSections;
+-(SubSection *) getSubSectionByID:(int) subSectionID;
 @end

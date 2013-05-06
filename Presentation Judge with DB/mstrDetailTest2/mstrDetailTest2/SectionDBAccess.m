@@ -156,4 +156,10 @@
     Section *sec = [secArray objectAtIndex:index];
     return sec.Section_Name;
 }
+-(Section *) getPresentation_SectionForIndex: (int) index presentationID:(int) presentationID
+{
+    NSMutableArray *secArray = [self getSectionsByPresentationID: presentationID];
+    Section *sec = [secArray objectAtIndex:index];
+    return sec;
+}
 @end

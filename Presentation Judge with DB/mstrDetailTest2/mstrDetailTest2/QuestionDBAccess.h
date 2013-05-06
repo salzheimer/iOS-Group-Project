@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
+#import "Question.h"
+
 @interface QuestionDBAccess : NSObject
 {
     sqlite3 *QuestionDB;
 }
+-(Question *) getQuestionByID:(int) questionID;
 @end

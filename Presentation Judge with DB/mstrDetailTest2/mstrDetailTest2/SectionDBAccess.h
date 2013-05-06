@@ -19,4 +19,6 @@
 -(NSMutableArray *)getSectionsByPresentationID:(int) presentationID;
 -(NSInteger) getSectionCountByPresentationID:(int) presentationID;
 -(NSString *) getPresentation_SectionNameForIndex: (int) index presentationID:(int) presentationID;
+-(Section *) getPresentation_SectionForIndex: (int) index presentationID:(int) presentationID;
+
 @end

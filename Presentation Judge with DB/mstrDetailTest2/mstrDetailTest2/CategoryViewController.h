@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class QuestionViewController;
 
 @protocol CategoryDelegate <NSObject>
 
@@ -14,7 +15,7 @@
 
 @end
 @interface CategoryViewController : UITableViewController
-
+@property (strong,nonatomic) QuestionViewController *questionController;
 @property (nonatomic,assign) id<CategoryDelegate> delegate;
 @property (nonatomic,assign) NSInteger presentationID;
 @end

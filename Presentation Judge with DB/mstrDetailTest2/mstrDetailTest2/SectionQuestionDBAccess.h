@@ -15,5 +15,5 @@
 -(NSMutableArray *) getPresentationSections;
 -(NSMutableArray *) getSectionQuestionsByPresentationID: (int) presentationID;
 -(NSInteger) countSectionsByPresentationID:(int) presentationID;
-
+-(NSMutableArray *) getSectionQuestionsBySectionID: (int) sectionID;
 @end

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface QuestionViewController : UIViewController
-
+-(void) loadQuestionsForSection:(int) sectionID;
 @end

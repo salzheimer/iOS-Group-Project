@@ -54,5 +54,49 @@
     
     
 }
+-(Question *) getQuestionByID:(int) questionID
+{
+      Question *newQuestion = [[Question alloc]init];
+    @try
+    {
+        
+        NSFileManager *fileMgr = [NSFileManager defaultManager];
+        NSString *dbPath=[[[NSBundle mainBundle] resourcePath]stringByAppendingPathComponent:@"PresentationJudge.sqlite"];
+        BOOL success = [fileMgr fileExistsAtPath:dbPath];
+        if(!success)
+        {
+            NSLog(@"Can not locate database file '%@'.",dbPath);
+        }
+        if(sqlite3_open([dbPath UTF8String],& QuestionDB)!= SQLITE_OK)
+        {
+            NSLog(@"An error occured connecting to db.");
+        }
+        NSString *sql = [NSString stringWithFormat:@"Select id,Question from Question where id=%d",questionID];
+        sqlite3_stmt *sqlStatment;
+        if(sqlite3_prepare(QuestionDB,[sql UTF8String],-1,&sqlStatment,NULL)!= SQLITE_OK)
+        {
+            NSLog(@"Problem with Select all questions statement");
+        }
+        
+        while(sqlite3_step(sqlStatment) ==SQLITE_ROW)
+        {
+            
+          
+            newQuestion.ID = sqlite3_column_int(sqlStatment,0);
+            newQuestion.Question  = [NSString stringWithUTF8String:(char *) sqlite3_column_text(sqlStatment,1) ];
+            
+           
+        }
+    }
+    @catch(NSException *ex)
+    {
+        NSLog(@"an exception occured: %@",[ex reason]);
+    }
+    @finally
+    {
+        return newQuestion;
+    }
+    
 
+}
 @end
