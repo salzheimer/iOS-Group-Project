@@ -86,6 +86,60 @@
     self.lblJudge2Name.text =[NSString stringWithFormat:@"Judge 2 Name: %@ %@", judge2.FirstName,judge2.LastName];
     self.lblJudge2Email.text = [NSString stringWithFormat:@"Judge 2 Email: %@", judge2.Email];
 }
+
+- (IBAction)openMail:(id)sender {
+    if ([MFMailComposeViewController canSendMail])
+    {
+        MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
+        mailer.mailComposeDelegate = self;
+        [mailer setSubject:@"Presentation Judge: Test Test!"];
+        NSArray *toRecipients = [NSArray arrayWithObjects: @"lauren-malenfant@uiowa.edu", nil];
+        [mailer setToRecipients:toRecipients];
+        NSString *emailBody = @"So far, the emails presented are just hard-coded in. In the future, this will have the judge's email and/or the presenter's email instead. Also, you can't send an email from your iOS Simulator.";
+        [mailer setMessageBody:emailBody isHTML:NO];
+        mailer.modalPresentationStyle = UIModalPresentationPageSheet;
+        [self presentViewController:mailer animated:YES completion:nil];
+        
+    }
+    else
+    { //for when the email doesn't work
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Failure"
+                                                        message:@"Your device doesn't support the composer sheet"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        [alert show];
+        
+
+}
+}
+
+//handling errors
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{
+    switch (result)
+    { //responses
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled: you cancelled the operation and no email message was queued.");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved: you saved the email message in the drafts folder.");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail send: the email message is queued in the outbox. It is ready to send.");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail failed: the email message was not saved or queued, possibly due to an error.");
+            break;
+        default:
+            NSLog(@"Mail not sent.");
+            break;
+    }
+    [self dismissViewControllerAnimated:NO completion:nil];
+}
+
+
+
 -(PresenterDBAccess *) presenterList
 {
     if(!_presenterList)

@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Presentation.h"
+#import <MessageUI/MessageUI.h>
+
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
 -(void) loadSelectedPresentation: (Presentation *) presentation;
+
+- (IBAction)openMail:(id)sender;
 
 @property (strong, nonatomic) id detailItem;
 
