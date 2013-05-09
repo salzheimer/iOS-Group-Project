@@ -124,10 +124,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
       NSInteger cellNum = indexPath.row;
-    Section *sec =[self.sectionList getPresentation_SectionForIndex:indexPath.row presentationID: presentationID];
+    Section *sec =[self.sectionList getPresentation_SectionForIndex:cellNum presentationID: presentationID];
     
     //get questions
-    [self.questionController loadQuestionsForSection:sec.ID ];
+    
+   // [self.questionController loadQuestionsForSection:sec.ID ];
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -136,5 +137,25 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
-
+//prepare to move to next mater view using segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    if ([[segue identifier] isEqualToString:@"QuestionSegue"])
+    {
+        //get questions for category
+        Section *section = [self.sectionList getPresentation_SectionForIndex:indexPath.row
+                                                              presentationID:presentationID ];
+        QuestionViewController *questionView  =(QuestionViewController *)[segue destinationViewController];
+        questionView.SectionID = section.ID;
+        questionView.PresentationID = presentationID;
+        //[self.questionController loadQuestionsForSection];
+        //get presentation
+       // Presentation *pres =[self.presentationList getPresentationForIndex:indexPath.row];
+        //CategoryViewController *catView = (CategoryViewController *)[segue destinationViewController];
+       // catView.presentationID = pres.ID;
+        
+    }
+}
 @end

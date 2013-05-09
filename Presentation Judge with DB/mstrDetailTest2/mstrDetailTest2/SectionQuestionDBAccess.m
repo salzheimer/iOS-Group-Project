@@ -125,7 +125,7 @@
             }
             if(sqlite3_open([dbPath UTF8String],& sqDB)== SQLITE_OK)
             {
-                NSLog(@"An error occured.");
+                NSLog(@"An error occured Section Questions.");
             }
             // loop thru presentation questions array
             for(int i=0;i< presQues.count;i++)
@@ -204,7 +204,7 @@
         }
         if(sqlite3_open([dbPath UTF8String],& sqDB)== SQLITE_OK)
         {
-            NSLog(@"An error occured.");
+            NSLog(@"An error occured getting section questions by section id.");
         }
                     NSString *sql = [NSString stringWithFormat:@"Select id,QuestionID,SectionID,SubSectionID,Comments from SectionQuestion where sectionid=%d",sectionID];
             sqlite3_stmt *sqlStatment;

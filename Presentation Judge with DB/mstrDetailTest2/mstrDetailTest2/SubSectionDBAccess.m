@@ -71,11 +71,18 @@
         {
             NSLog(@"An error occured connecting to db.");
         }
-        NSString *sql= [NSString stringWithFormat:@"Select id,SubSectionName from SubSection where id= %d",subSectionID];
+        NSString *sql= [NSString stringWithFormat:@"Select id,Name from SubSection where id= %d",subSectionID];
         sqlite3_stmt *sqlStatment;
         if(sqlite3_prepare(SubSectionDB,[sql UTF8String],-1,&sqlStatment,NULL)!= SQLITE_OK)
         {
             NSLog(@"Problem with select all subsections statement");
+            @try{
+                sqlite3_prepare(SubSectionDB,[sql UTF8String],-1,&sqlStatment,NULL);
+            }
+            @catch(NSException *ex)
+            {
+               NSLog(@"an exception occured getting select al: %@",[ex reason]); 
+            }
         }
         
         while(sqlite3_step(sqlStatment) ==SQLITE_ROW)
