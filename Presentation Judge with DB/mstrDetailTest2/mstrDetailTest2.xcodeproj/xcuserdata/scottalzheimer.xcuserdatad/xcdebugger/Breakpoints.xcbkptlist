@@ -33,13 +33,39 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "mstrDetailTest2/QuestionViewController.m"
-         timestampString = "389768621.073334"
+         filePath = "mstrDetailTest2/ComboBox/ComboBox.m"
+         timestampString = "389819289.345317"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "118"
-         endingLineNumber = "118"
-         landmarkName = "-loadQuestionsForSection"
+         startingLineNumber = "84"
+         endingLineNumber = "84"
+         landmarkName = "-showPicker:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "mstrDetailTest2/ComboBox/ComboBox.m"
+         timestampString = "389820870.519395"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "107"
+         endingLineNumber = "107"
+         landmarkName = "-showPicker:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "mstrDetailTest2/ComboBox/ComboBox.m"
+         timestampString = "389820922.682371"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "89"
+         endingLineNumber = "89"
+         landmarkName = "-showPicker:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -47,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "mstrDetailTest2/QuestionViewController.m"
-         timestampString = "389768621.073334"
+         timestampString = "389849408.951391"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "114"
-         endingLineNumber = "114"
+         startingLineNumber = "162"
+         endingLineNumber = "162"
          landmarkName = "-loadQuestionsForSection"
          landmarkType = "5">
       </FileBreakpoint>
@@ -59,13 +85,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "mstrDetailTest2/QuestionViewController.m"
-         timestampString = "389768621.073334"
+         filePath = "mstrDetailTest2/ComboBox/ComboBox.m"
+         timestampString = "389843521.251492"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "149"
-         endingLineNumber = "149"
-         landmarkName = "-pickerView:numberOfRowsInComponent:"
+         startingLineNumber = "40"
+         endingLineNumber = "40"
+         landmarkName = "-shouldAutorotateToInterfaceOrientation:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -73,38 +99,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "mstrDetailTest2/QuestionViewController.m"
-         timestampString = "389768621.073334"
+         timestampString = "389849402.329144"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "163"
-         endingLineNumber = "163"
-         landmarkName = "-pickerView:didSelectRow:inComponent:"
+         startingLineNumber = "215"
+         endingLineNumber = "215"
+         landmarkName = "-SaveRatings:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "mstrDetailTest2/QuestionViewController.m"
-         timestampString = "389768919.256413"
+         filePath = "mstrDetailTest2/QuestionRankingDBAccess.m"
+         timestampString = "389855427.568566"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "167"
-         endingLineNumber = "167"
-         landmarkName = "-pickerView:viewForRow:forComponent:reusingView:"
+         startingLineNumber = "53"
+         endingLineNumber = "53"
+         landmarkName = "-SavePresentationRanking:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "mstrDetailTest2/QuestionViewController.m"
-         timestampString = "389768878.033617"
+         filePath = "mstrDetailTest2/QuestionRankingDBAccess.m"
+         timestampString = "389854479.139642"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "158"
-         endingLineNumber = "158"
-         landmarkName = "-pickerView:titleForRow:forComponent:"
+         startingLineNumber = "37"
+         endingLineNumber = "37"
+         landmarkName = "-SavePresentationRanking:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -123,9 +123,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-      NSInteger cellNum = indexPath.row;
+ /*     NSInteger cellNum = indexPath.row;
     Section *sec =[self.sectionList getPresentation_SectionForIndex:cellNum presentationID: presentationID];
-    
+   */
     //get questions
     
    // [self.questionController loadQuestionsForSection:sec.ID ];

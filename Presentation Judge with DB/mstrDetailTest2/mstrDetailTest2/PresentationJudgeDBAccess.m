@@ -50,7 +50,7 @@
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
-    {
+    {          sqlite3_close(pjDB);
         return presentationJudgeArray;
     }
     
@@ -97,6 +97,7 @@
     }
     @finally
     {
+        sqlite3_close(pjDB);
         return judgeArray;
     }
 

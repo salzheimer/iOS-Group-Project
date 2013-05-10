@@ -101,6 +101,7 @@
     }
     @finally
     {
+          sqlite3_close(pqDB);
         return presentationQuestionArray;
     }
     
@@ -146,6 +147,7 @@
     }
     @finally
     {
+                  sqlite3_close(pqDB);
         return newSectionQuestion.PresentationID;
     }
 }

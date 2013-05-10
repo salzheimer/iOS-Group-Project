@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
+#import "QuestionRanking.h"
+
 @interface QuestionRankingDBAccess : NSObject
 {
     sqlite3 *questionRankingDB;
 }
-
+-(void) SavePresentationRanking:(QuestionRanking *) ranking;
 @end

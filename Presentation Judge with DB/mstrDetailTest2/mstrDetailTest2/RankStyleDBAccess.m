@@ -52,6 +52,7 @@
     }
     @finally
     {
+        sqlite3_close(rankStyleDB);
         return rankStyleArray;
     }
     

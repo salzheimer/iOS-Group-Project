@@ -53,6 +53,7 @@
     }
     @finally
     {
+        sqlite3_close(SectionDB);
         return sectionArray;
     }
 
@@ -96,6 +97,7 @@
     }
     @finally
     {
+        sqlite3_close(SectionDB);
         return newSection;
     }
 
@@ -141,6 +143,7 @@
     }
     @finally
     {
+        sqlite3_close(SectionDB);
         return sectionArray;
     }
     

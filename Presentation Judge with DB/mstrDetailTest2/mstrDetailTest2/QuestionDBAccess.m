@@ -48,7 +48,7 @@
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
-    {
+    {        sqlite3_close(QuestionDB);
         return questionArray;
     }
     
@@ -94,6 +94,7 @@
     }
     @finally
     {
+        sqlite3_close(QuestionDB);
         return newQuestion;
     }
     

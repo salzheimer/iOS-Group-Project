@@ -105,6 +105,9 @@
     {
         NSLog(@"an exception occured: %@",[ex reason]);
     }
+    @finally {
+        sqlite3_close(PresentationDB);
+    }
    
 }
 
@@ -159,7 +162,9 @@
     {
         NSLog(@"an exception occured: %@",[ex reason]);
     }
-   
+    @finally {
+                sqlite3_close(PresentationDB);
+    }
 
 }
 

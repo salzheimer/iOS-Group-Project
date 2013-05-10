@@ -10,6 +10,10 @@
 		1B610AC11728B1B8001AA9E0 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B610AC01728B1B8001AA9E0 /* CategoryViewController.m */; };
 		1B738D70172F3EC400A3B962 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B738D6F172F3EC400A3B962 /* QuestionViewController.m */; };
 		1B738D72172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B738D71172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg */; };
+		1BADB02C173BEE23007A2379 /* RankingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BADB02B173BEE22007A2379 /* RankingView.m */; };
+		1BADB032173C0352007A2379 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BADB02E173C0352007A2379 /* arrow.png */; };
+		1BADB033173C0352007A2379 /* ComboBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BADB030173C0352007A2379 /* ComboBox.m */; };
+		1BADB034173C0352007A2379 /* ComboBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BADB031173C0352007A2379 /* ComboBox.xib */; };
 		1BCF40891725F34D00B684CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF40881725F34D00B684CA /* UIKit.framework */; };
 		1BCF408B1725F34D00B684CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF408A1725F34D00B684CA /* Foundation.framework */; };
 		1BCF408D1725F34D00B684CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BCF408C1725F34D00B684CA /* CoreGraphics.framework */; };
@@ -72,6 +76,12 @@
 		1B738D6E172F3EC400A3B962 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		1B738D6F172F3EC400A3B962 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
 		1B738D71172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1385593-gavel-and-clipboard-with-space-for-messages.jpg"; sourceTree = "<group>"; };
+		1BADB02A173BEE22007A2379 /* RankingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingView.h; sourceTree = "<group>"; };
+		1BADB02B173BEE22007A2379 /* RankingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingView.m; sourceTree = "<group>"; };
+		1BADB02E173C0352007A2379 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		1BADB02F173C0352007A2379 /* ComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboBox.h; sourceTree = "<group>"; };
+		1BADB030173C0352007A2379 /* ComboBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboBox.m; sourceTree = "<group>"; };
+		1BADB031173C0352007A2379 /* ComboBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComboBox.xib; sourceTree = "<group>"; };
 		1BCF40851725F34D00B684CA /* mstrDetailTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mstrDetailTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCF40881725F34D00B684CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1BCF408A1725F34D00B684CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -174,6 +184,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BADB02D173C0351007A2379 /* ComboBox */ = {
+			isa = PBXGroup;
+			children = (
+				1BADB02E173C0352007A2379 /* arrow.png */,
+				1BADB02F173C0352007A2379 /* ComboBox.h */,
+				1BADB030173C0352007A2379 /* ComboBox.m */,
+				1BADB031173C0352007A2379 /* ComboBox.xib */,
+			);
+			path = ComboBox;
+			sourceTree = "<group>";
+		};
 		1BCF407C1725F34D00B684CA = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +231,7 @@
 		1BCF408E1725F34D00B684CA /* mstrDetailTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				1BADB02D173C0351007A2379 /* ComboBox */,
 				1BCF410E1725F42500B684CA /* Data Access */,
 				1BCF40EC1725F3DD00B684CA /* Models */,
 				1BCF40971725F34E00B684CA /* AppDelegate.h */,
@@ -290,6 +312,8 @@
 				1BCF40DC1725F3B300B684CA /* SectionQuestion.m */,
 				1BCF40DD1725F3B300B684CA /* SubSection.h */,
 				1BCF40DE1725F3B300B684CA /* SubSection.m */,
+				1BADB02A173BEE22007A2379 /* RankingView.h */,
+				1BADB02B173BEE22007A2379 /* RankingView.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -402,6 +426,8 @@
 				1BCF41121725F46400B684CA /* PresentationJudge.sqlite in Resources */,
 				1B738D72172F477200A3B962 /* 1385593-gavel-and-clipboard-with-space-for-messages.jpg in Resources */,
 				F2F9219E173493D40050B2EA /* gavel_1.jpg in Resources */,
+				1BADB032173C0352007A2379 /* arrow.png in Resources */,
+				1BADB034173C0352007A2379 /* ComboBox.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +491,8 @@
 				1BCF410D1725F41A00B684CA /* SubSectionDBAccess.m in Sources */,
 				1B610AC11728B1B8001AA9E0 /* CategoryViewController.m in Sources */,
 				1B738D70172F3EC400A3B962 /* QuestionViewController.m in Sources */,
+				1BADB02C173BEE23007A2379 /* RankingView.m in Sources */,
+				1BADB033173C0352007A2379 /* ComboBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

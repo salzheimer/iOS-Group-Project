@@ -81,6 +81,7 @@
     }
     @finally
     {
+        sqlite3_close(sqDB);
         return questionSectionArray;
     }
     
@@ -184,6 +185,7 @@
         }
         @finally
         {
+            sqlite3_close(sqDB);
             return questionSectionArray;
         }
     }
@@ -202,7 +204,7 @@
         {
             NSLog(@"Can not locate database file '%@'.",dbPath);
         }
-        if(sqlite3_open([dbPath UTF8String],& sqDB)== SQLITE_OK)
+        if(sqlite3_open([dbPath UTF8String],& sqDB)!= SQLITE_OK)
         {
             NSLog(@"An error occured getting section questions by section id.");
         }
@@ -259,6 +261,7 @@
     }
     @finally
     {
+        sqlite3_close(sqDB);
         return questionSectionArray;
     }
 }

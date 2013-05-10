@@ -52,7 +52,7 @@
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
-    {
+    {        sqlite3_close(presenterDB);
         return presenterArray;
     }
 }    
@@ -95,7 +95,9 @@
     {
         NSLog(@"an exception occured: %@",[ex reason]);
     }
-  
+    @finally {
+          sqlite3_close(presenterDB);
+    }
 
   }
 

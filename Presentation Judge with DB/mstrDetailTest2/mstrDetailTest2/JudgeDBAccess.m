@@ -55,7 +55,7 @@
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
-    {
+    {        sqlite3_close(judgeDB);
         return judgeArray;
     }
     
@@ -116,10 +116,10 @@
     {
         NSLog(@"an exception occured: %@",[ex reason]);
     }
-    //@finally
-    //{
-    //    return judgeArray;
-   // }
+    @finally
+    {
+        sqlite3_close(judgeDB);
+    }
     
     
 }
