@@ -166,11 +166,19 @@
                                     <action selector="SaveRatings:" destination="wJM-XM-c1P" eventType="touchDown" id="O3G-Ia-olG"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07U-7i-HVu">
+                                <items>
+                                    <navigationItem title="Title" id="5to-kT-LFt"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Qdz-FT-Nhi" secondAttribute="trailing" constant="176" id="267-wS-YUf"/>
+                            <constraint firstItem="07U-7i-HVu" firstAttribute="trailing" secondItem="GBW-c3-ATh" secondAttribute="trailing" type="default" id="5Wt-lf-4ZR"/>
                             <constraint firstAttribute="bottom" secondItem="Qdz-FT-Nhi" secondAttribute="bottom" constant="49" id="9Pj-yf-hr3"/>
+                            <constraint firstItem="07U-7i-HVu" firstAttribute="top" secondItem="GBW-c3-ATh" secondAttribute="top" type="default" id="TDC-uj-352"/>
+                            <constraint firstItem="07U-7i-HVu" firstAttribute="leading" secondItem="GBW-c3-ATh" secondAttribute="leading" type="default" id="Xrq-d4-Fub"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
