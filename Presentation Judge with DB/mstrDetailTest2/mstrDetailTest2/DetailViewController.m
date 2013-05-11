@@ -15,10 +15,10 @@
 #import "PresentationDBAccess.h"
 #import "Presentation.h"
 
-static NSMutableString *judEmail1 = nil;
-static NSMutableString *judEmail2 = nil;
-static NSMutableString *presName = nil;
-static NSMutableString *presTitle = nil;
+static NSString *judEmail1 = @"";
+static NSString *judEmail2 = @"";
+static NSString *presName = @"";
+static NSString *presTitle = @"";
 static int totPoints = 0;
 static int gotPoints = 0;
 
@@ -86,7 +86,7 @@ static int gotPoints = 0;
     self.lblPresenter1Name.text =[NSString stringWithFormat:@"Presenter Name: %@ %@",presenter.FirstName, presenter.LastName];
     self.lblPresenter1Email.text =[NSString stringWithFormat:@"Presenter Email: %@", presenter.Email];
     
-    presName = [NSMutableString stringWithFormat:@"%@ %@", presenter.FirstName, presenter.LastName];
+    presName = [NSString stringWithFormat:@"%@ %@", presenter.FirstName, presenter.LastName];
     
     //get Judge Information
     JudgeDBAccess *judgeDB =[[JudgeDBAccess alloc]init];
