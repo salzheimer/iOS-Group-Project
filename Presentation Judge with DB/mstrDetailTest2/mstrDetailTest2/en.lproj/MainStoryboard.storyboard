@@ -166,19 +166,19 @@
                                     <action selector="SaveRatings:" destination="wJM-XM-c1P" eventType="touchDown" id="O3G-Ia-olG"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07U-7i-HVu">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnw-Oc-Lne">
                                 <items>
-                                    <navigationItem title="Title" id="5to-kT-LFt"/>
+                                    <navigationItem title="Title" id="hDg-qQ-awT"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Qdz-FT-Nhi" secondAttribute="trailing" constant="176" id="267-wS-YUf"/>
-                            <constraint firstItem="07U-7i-HVu" firstAttribute="trailing" secondItem="GBW-c3-ATh" secondAttribute="trailing" type="default" id="5Wt-lf-4ZR"/>
+                            <constraint firstItem="dnw-Oc-Lne" firstAttribute="leading" secondItem="GBW-c3-ATh" secondAttribute="leading" type="default" id="8yT-v5-aUK"/>
                             <constraint firstAttribute="bottom" secondItem="Qdz-FT-Nhi" secondAttribute="bottom" constant="49" id="9Pj-yf-hr3"/>
-                            <constraint firstItem="07U-7i-HVu" firstAttribute="top" secondItem="GBW-c3-ATh" secondAttribute="top" type="default" id="TDC-uj-352"/>
-                            <constraint firstItem="07U-7i-HVu" firstAttribute="leading" secondItem="GBW-c3-ATh" secondAttribute="leading" type="default" id="Xrq-d4-Fub"/>
+                            <constraint firstItem="dnw-Oc-Lne" firstAttribute="top" secondItem="GBW-c3-ATh" secondAttribute="top" type="default" id="CBy-cr-xZj"/>
+                            <constraint firstItem="dnw-Oc-Lne" firstAttribute="trailing" secondItem="GBW-c3-ATh" secondAttribute="trailing" type="default" id="dhx-5M-GSB"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -186,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Kk-XD-jvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1892" y="-623"/>
+            <point key="canvasLocation" x="1742" y="-630"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="18">
@@ -308,7 +308,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="248"/>
+            <point key="canvasLocation" x="-388" y="470"/>
         </scene>
     </scenes>
     <resources>
