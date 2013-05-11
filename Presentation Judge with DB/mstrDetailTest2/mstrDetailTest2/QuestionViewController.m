@@ -224,6 +224,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// Total rows in our component.
+-(NSInteger)pickerView:(UIPickerView *)pvRanking numberOfRowsInComponent:(NSInteger)component{
+    return rankingElements.count;
+}
+
+// Display each row's data.
+-(NSString *)pickerView:(UIPickerView *)pvRanking titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    return [rankingElements objectAtIndex: row];
+}
+
+// Do something with the selected row.
+-(void)pickerView:(UIPickerView *)pvRanking didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    NSLog(@"You selected this: %@", [rankingElements objectAtIndex: row]);
+}
+// Number of components.
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
 #pragma mark - Split view
 
 - (void)questionViewController:(UISplitViewController *)questionController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
@@ -236,29 +256,9 @@
 - (void)questionViewController:(UISplitViewController *)questionController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
+    
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
-
-// Number of components.
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 1;
-}
-
-// Total rows in our component.
--(NSInteger)pickerView:(UIPickerView *)pvRanking numberOfRowsInComponent:(NSInteger)component{
-   return rankingElements.count;
-}
-
-// Display each row's data.
--(NSString *)pickerView:(UIPickerView *)pvRanking titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [rankingElements objectAtIndex: row];
-}
-
-// Do something with the selected row.
--(void)pickerView:(UIPickerView *)pvRanking didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    NSLog(@"You selected this: %@", [rankingElements objectAtIndex: row]);
-}
-
 
 @end
