@@ -101,7 +101,7 @@
        
         
         //Subsection label
-        UILabel *lblSubSection = [[UILabel alloc] initWithFrame:CGRectMake(10, (i*70)+10, 250, 20)];
+        UILabel *lblSubSection = [[UILabel alloc] initWithFrame:CGRectMake(10, (i*70)+20, 250, 20)];
         [lblSubSection setText:[NSString stringWithFormat:@"%@:",subSection.SubSection_Name]];
         [lblSubSection setTextColor:[UIColor blackColor]];
         
