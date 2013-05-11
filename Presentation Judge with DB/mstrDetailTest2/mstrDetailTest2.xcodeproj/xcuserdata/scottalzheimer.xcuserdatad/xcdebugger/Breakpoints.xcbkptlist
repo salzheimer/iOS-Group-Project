@@ -108,15 +108,15 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "mstrDetailTest2/QuestionRankingDBAccess.m"
-         timestampString = "389855427.568566"
+         timestampString = "389933666.734851"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "53"
-         endingLineNumber = "53"
+         startingLineNumber = "85"
+         endingLineNumber = "85"
          landmarkName = "-SavePresentationRanking:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,50 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "mstrDetailTest2/QuestionRankingDBAccess.m"
-         timestampString = "389854479.139642"
+         timestampString = "389933666.734851"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "37"
-         endingLineNumber = "37"
+         startingLineNumber = "69"
+         endingLineNumber = "69"
+         landmarkName = "-SavePresentationRanking:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "mstrDetailTest2/QuestionRankingDBAccess.m"
+         timestampString = "389933666.734851"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "84"
+         endingLineNumber = "84"
+         landmarkName = "-SavePresentationRanking:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "mstrDetailTest2/QuestionRankingDBAccess.m"
+         timestampString = "389933666.734851"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "40"
+         endingLineNumber = "40"
+         landmarkName = "-SavePresentationRanking:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "mstrDetailTest2/QuestionRankingDBAccess.m"
+         timestampString = "389928860.783151"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
          landmarkName = "-SavePresentationRanking:"
          landmarkType = "5">
       </FileBreakpoint>

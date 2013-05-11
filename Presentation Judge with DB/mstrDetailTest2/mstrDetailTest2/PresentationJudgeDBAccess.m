@@ -44,9 +44,11 @@
             newPresentationJudge.PresentationID = sqlite3_column_int(sqlStatment,2);
             [presentationJudgeArray addObject:newPresentationJudge];
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+        sqlite3_close(pjDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
@@ -90,9 +92,11 @@
             newPresentationJudge.PresentationID = sqlite3_column_int(sqlStatment,2);
             [judgeArray addObject:newPresentationJudge];
         }
+     sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+        sqlite3_close(pjDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally

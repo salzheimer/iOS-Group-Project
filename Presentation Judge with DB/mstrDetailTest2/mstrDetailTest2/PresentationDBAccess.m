@@ -51,9 +51,11 @@
                 
                 [presentationArray addObject:newPresentation];
             }
+             sqlite3_reset(sqlStatment);
         }
         @catch(NSException *ex)
         {
+            sqlite3_close(PresentationDB);
             NSLog(@"an exception occured: %@",[ex reason]);
         }
         @finally
@@ -100,9 +102,11 @@
             
             return newPresentation;
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+        sqlite3_close(PresentationDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally {
@@ -157,9 +161,11 @@
             pp.PresenterID = sqlite3_column_int(sqlStatment,0);
             return pp.PresenterID;
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+        sqlite3_close(PresentationDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally {

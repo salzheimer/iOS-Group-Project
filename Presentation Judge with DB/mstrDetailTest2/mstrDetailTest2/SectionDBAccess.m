@@ -46,6 +46,7 @@
             
             [sectionArray addObject:newSection];
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
@@ -90,6 +91,7 @@
             newSection.Section_Name = [NSString stringWithUTF8String:(char *) sqlite3_column_text(sqlStatment,1) ];
             
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
@@ -136,9 +138,11 @@
             
             [sectionArray addObject:newSection];
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+                sqlite3_close(SectionDB);
         NSLog(@"an exception occured in getsectionbypresentationid: %@",[ex reason]);
     }
     @finally

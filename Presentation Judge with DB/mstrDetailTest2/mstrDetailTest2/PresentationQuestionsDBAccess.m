@@ -46,9 +46,11 @@
                         
             [presentationQuestionArray addObject:newSectionQuestion];
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+          sqlite3_close(pqDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
@@ -94,9 +96,11 @@
             
             [presentationQuestionArray addObject:newSectionQuestion];
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+        sqlite3_close(pqDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
@@ -140,9 +144,11 @@
             newSectionQuestion.QuestionSectionID =sqlite3_column_int(sqlStatment,2);
             
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+        sqlite3_close(pqDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally

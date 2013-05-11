@@ -42,14 +42,17 @@
             
             [subSectionArray addObject:newSection];
         }
+        sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+        sqlite3_close(SubSectionDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
     {
         sqlite3_close(SubSectionDB);
+        
         return subSectionArray;
     }
 
@@ -94,14 +97,17 @@
             newSection.SubSection_Name  = [NSString stringWithUTF8String:(char *) sqlite3_column_text(sqlStatment,1) ];
           
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+                sqlite3_close(SubSectionDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
     {
         sqlite3_close(SubSectionDB);
+        
         return newSection;
     }
 

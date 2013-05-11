@@ -46,9 +46,11 @@
             
             [presenterArray addObject:newPresenter];
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+          sqlite3_close(presenterDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
@@ -90,9 +92,11 @@
             return newPresenter;
           
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+          sqlite3_close(presenterDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally {

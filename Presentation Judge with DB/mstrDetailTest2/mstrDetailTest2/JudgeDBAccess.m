@@ -49,6 +49,7 @@
             
             [judgeArray addObject:newJudge];
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
@@ -111,9 +112,11 @@
             
             return newJudge;
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+        sqlite3_close(judgeDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally

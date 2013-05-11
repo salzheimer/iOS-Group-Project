@@ -77,6 +77,7 @@
     }
     @catch(NSException *ex)
     {
+                sqlite3_close(sqDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
@@ -181,6 +182,7 @@
         }
         @catch(NSException *ex)
         {
+                    sqlite3_close(sqDB);
             NSLog(@"an exception occured: %@",[ex reason]);
         }
         @finally
@@ -257,6 +259,7 @@
     }
     @catch(NSException *ex)
     {
+                sqlite3_close(sqDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally

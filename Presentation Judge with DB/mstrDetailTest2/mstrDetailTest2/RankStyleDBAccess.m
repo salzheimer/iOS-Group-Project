@@ -45,9 +45,11 @@
            
             [rankStyleArray addObject:newRankStyle];
         }
+         sqlite3_reset(sqlStatment);
     }
     @catch(NSException *ex)
     {
+                sqlite3_close(rankStyleDB);
         NSLog(@"an exception occured: %@",[ex reason]);
     }
     @finally
