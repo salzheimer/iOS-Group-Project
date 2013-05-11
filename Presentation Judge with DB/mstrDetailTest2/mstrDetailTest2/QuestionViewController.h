@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ComboBox.h"
+@class QuestionViewController;
 
 @interface QuestionViewController : UIViewController<UISplitViewControllerDelegate,UIPickerViewDataSource,UIPickerViewDelegate,UITextFieldDelegate>
 {
@@ -23,6 +24,7 @@
 -(void) loadQuestionsForSection;
 
 @property (strong, nonatomic) id detailItem;
+
 
 @property (nonatomic,assign) NSInteger SectionID;
 @property (nonatomic,assign) NSInteger PresentationID;

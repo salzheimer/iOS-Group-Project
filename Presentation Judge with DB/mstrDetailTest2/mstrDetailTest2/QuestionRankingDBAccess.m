@@ -40,7 +40,14 @@
             {
                 
                int hasError = 0;                
-                if(sqlite3_exec(questionRankingDB, [sql UTF8String],NULL,NULL,&err)!=SQLITE_OK) {
+               // if(sqlite3_step(sqlStatment)!= SQLITE_OK)
+                if(sqlite3_exec(questionRankingDB, [sql UTF8String],NULL,NULL,&err)!=SQLITE_OK)
+                {
+//                    int rc;
+//                    while (SQLITE_LOCKED)==(rc= sqlite3_step(sqlStatment))
+//                    {
+//                        rc=wait_for_unlock_notify(
+//                    }
                     hasError=1;
                     NSLog(@"Prepare-error %s", sqlite3_errmsg(questionRankingDB));
                 }

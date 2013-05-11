@@ -63,7 +63,10 @@ static int gotPoints = 0;
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
-
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

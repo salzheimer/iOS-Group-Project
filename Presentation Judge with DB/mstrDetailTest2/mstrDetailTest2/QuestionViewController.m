@@ -72,6 +72,10 @@
     [self loadQuestionsForSection];
     
 }
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+}
 -(void) loadQuestionsForSection//:(int) sectionID
 {
     SectionQuestionDBAccess * secQuestions =[[SectionQuestionDBAccess alloc]init];
@@ -82,7 +86,7 @@
     NSInteger lowerBound =[pres.ScaleLowerBound intValue];
     NSInteger upperBound=[pres.ScaleUpperBound intValue];
     rankingElements =[[NSMutableArray alloc]init];
-    
+    [rankingElements addObject:@"0"];
     for(NSInteger i=lowerBound; i< upperBound+1;i++)
     {
        
@@ -101,12 +105,12 @@
        
         
         //Subsection label
-        UILabel *lblSubSection = [[UILabel alloc] initWithFrame:CGRectMake(10, (i*70)+20, 250, 20)];
+        UILabel *lblSubSection = [[UILabel alloc] initWithFrame:CGRectMake(10, (i*70)+50, 250, 20)];
         [lblSubSection setText:[NSString stringWithFormat:@"%@:",subSection.SubSection_Name]];
         [lblSubSection setTextColor:[UIColor blackColor]];
         
         //Question
-        UILabel *lblQuestion = [[UILabel alloc]initWithFrame:CGRectMake(100, (i*70)+40, 400, 20)];
+        UILabel *lblQuestion = [[UILabel alloc]initWithFrame:CGRectMake(100, (i*70)+80, 400, 20)];
         [lblQuestion setText:currentQuestion.Question];
         [lblQuestion setTextColor:[UIColor blackColor]];
         lblQuestion.numberOfLines =1;
@@ -125,31 +129,31 @@
                     combo1 =[[ComboBox alloc]init];
                     [combo1 setComboData:rankingElements];
                     [self.view addSubview:combo1.view];
-                    combo1.view.frame = CGRectMake(500, (i*60)+40, 90.0, 30.0);
+                    combo1.view.frame = CGRectMake(500, (i*60)+80, 120, 31);
                     break;
                 case 1:
                     combo2 =[[ComboBox alloc]init];
                     [combo2 setComboData:rankingElements];
                     [self.view addSubview:combo2.view];
-                    combo2.view.frame = CGRectMake(500, (i*60)+40, 90.0, 30.0);
+                    combo2.view.frame = CGRectMake(500, (i*60)+80, 90.0, 30.0);
                     break;
                 case 2:
                     combo3 =[[ComboBox alloc]init];
                     [combo3 setComboData:rankingElements];
                     [self.view addSubview:combo3.view];
-                    combo3.view.frame = CGRectMake(500, (i*60)+40, 90.0, 30.0);
+                    combo3.view.frame = CGRectMake(500, (i*60)+80, 90.0, 30.0);
                     break;
                 case 3:
                     combo4 =[[ComboBox alloc]init];
                     [combo4 setComboData:rankingElements];
                     [self.view addSubview:combo4.view];
-                    combo4.view.frame = CGRectMake(500, (i*60)+40, 90.0, 30.0);
+                    combo4.view.frame = CGRectMake(500, (i*60)+80, 90.0, 30.0);
                     break;
                 case 4:
                     combo5 =[[ComboBox alloc]init];
                     [combo5 setComboData:rankingElements];
                     [self.view addSubview:combo5.view];
-                    combo5.view.frame = CGRectMake(500, (i*60)+40, 90.0, 30.0);
+                    combo5.view.frame = CGRectMake(500, (i*60)+80, 90.0, 30.0);
                     break;
                 default:
                     break;
@@ -158,7 +162,7 @@
         else if ([lblSubSection.text rangeOfString:@"Comments" ].location != NSNotFound)
         {
             //add textbox for comments
-            self.txtComments = [[UITextField alloc]initWithFrame:CGRectMake(10, (i*70)+40, 500.0, 200.0)];
+            self.txtComments = [[UITextField alloc]initWithFrame:CGRectMake(10, (i*70)+80, 500.0, 200.0)];
            
             self.txtComments.keyboardType = UIKeyboardAppearanceDefault;
             self.txtComments.borderStyle = UITextBorderStyleRoundedRect;
@@ -178,7 +182,6 @@
 
 - (IBAction)SaveRatings:(id)sender
 {
-    NSArray *views =  [self.view subviews];
     QuestionRankingDBAccess *qRankingDb =[[QuestionRankingDBAccess alloc]init];
     SectionQuestionDBAccess * secQuestions =[[SectionQuestionDBAccess alloc]init];
     NSMutableArray *questions= [secQuestions getSectionQuestionsBySectionID:SectionID];

@@ -344,6 +344,7 @@
         <class className="QuestionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionViewController.h"/>
             <relationships>
+                <relationship kind="action" name="SaveRatings:"/>
                 <relationship kind="outlet" name="btnSave" candidateClass="UIButton"/>
             </relationships>
         </class>
