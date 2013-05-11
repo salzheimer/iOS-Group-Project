@@ -75,7 +75,6 @@ static int gotPoints = 0;
     self.gavelImage.hidden = TRUE;
     self.instructionsView.hidden = TRUE;
     self.lblPresentationTitle.text = [NSString stringWithFormat:@"Presentation Title: %@",presentation.Title];
-    
     presTitle = presentation.Title;
     
     //get Presenter Information
@@ -94,14 +93,12 @@ static int gotPoints = 0;
     NSMutableArray *judges = [judgeDB getJudgesByPresentationID:presentation.ID];
     Judge *judge1 = judges[0];
     self.lblJudge1Name.text =[NSString stringWithFormat:@"Judge 1 Name: %@ %@", judge1.FirstName,judge1.LastName];
-    self.lblJudge1Email.text = [NSString stringWithFormat:@"Judge 1 Email: %@", judge1.Email];
-    
+    self.lblJudge1Email.text = [NSString stringWithFormat:@"Judge 1 Email: %@", judge1.Email];    
     judEmail1 = judge1.Email;
     
     Judge *judge2 = judges[1];
     self.lblJudge2Name.text =[NSString stringWithFormat:@"Judge 2 Name: %@ %@", judge2.FirstName,judge2.LastName];
-    self.lblJudge2Email.text = [NSString stringWithFormat:@"Judge 2 Email: %@", judge2.Email];
-    
+    self.lblJudge2Email.text = [NSString stringWithFormat:@"Judge 2 Email: %@", judge2.Email];    
     judEmail2 = judge2.Email;
 }
 
