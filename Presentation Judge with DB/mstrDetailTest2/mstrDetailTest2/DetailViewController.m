@@ -15,6 +15,14 @@
 #import "PresentationDBAccess.h"
 #import "Presentation.h"
 
+static NSMutableString *judEmail1 = nil;
+static NSMutableString *judEmail2 = nil;
+static NSMutableString *presName = nil;
+static NSMutableString *presTitle = nil;
+static int totPoints = 0;
+static int gotPoints = 0;
+
+
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property( strong, nonatomic) JudgeDBAccess *judgeList;
@@ -67,6 +75,9 @@
     self.gavelImage.hidden = TRUE;
     self.instructionsView.hidden = TRUE;
     self.lblPresentationTitle.text = [NSString stringWithFormat:@"Presentation Title: %@",presentation.Title];
+    
+    presTitle = presentation.Title;
+    
     //get Presenter Information
     
     PresenterDBAccess *presenterDB =[[PresenterDBAccess alloc]init];
@@ -75,6 +86,9 @@
     
     self.lblPresenter1Name.text =[NSString stringWithFormat:@"Presenter Name: %@ %@",presenter.FirstName, presenter.LastName];
     self.lblPresenter1Email.text =[NSString stringWithFormat:@"Presenter Email: %@", presenter.Email];
+    
+    presName = [NSMutableString stringWithFormat:@"%@ %@", presenter.FirstName, presenter.LastName];
+    
     //get Judge Information
     JudgeDBAccess *judgeDB =[[JudgeDBAccess alloc]init];
     NSMutableArray *judges = [judgeDB getJudgesByPresentationID:presentation.ID];
@@ -82,20 +96,25 @@
     self.lblJudge1Name.text =[NSString stringWithFormat:@"Judge 1 Name: %@ %@", judge1.FirstName,judge1.LastName];
     self.lblJudge1Email.text = [NSString stringWithFormat:@"Judge 1 Email: %@", judge1.Email];
     
+    judEmail1 = judge1.Email;
+    
     Judge *judge2 = judges[1];
     self.lblJudge2Name.text =[NSString stringWithFormat:@"Judge 2 Name: %@ %@", judge2.FirstName,judge2.LastName];
     self.lblJudge2Email.text = [NSString stringWithFormat:@"Judge 2 Email: %@", judge2.Email];
+    
+    judEmail2 = judge2.Email;
 }
 
 - (IBAction)openMail:(id)sender {
     if ([MFMailComposeViewController canSendMail])
     {
+        NSString *subj = [NSString stringWithFormat: @"Presentation Judge Results: %@", presName];
         MFMailComposeViewController *mailer = [[MFMailComposeViewController alloc] init];
         mailer.mailComposeDelegate = self;
-        [mailer setSubject:@"Presentation Judge: Test Test!"];
-        NSArray *toRecipients = [NSArray arrayWithObjects: @"lauren-malenfant@uiowa.edu", nil];
+        [mailer setSubject: subj];
+        NSArray *toRecipients = [NSArray arrayWithObjects: judEmail1, judEmail2, nil];
         [mailer setToRecipients:toRecipients];
-        NSString *emailBody = @"So far, the emails presented are just hard-coded in. In the future, this will have the judge's email and/or the presenter's email instead. Also, you can't send an email from your iOS Simulator.";
+        NSString *emailBody = [NSString stringWithFormat: @"Results for %@ on his presentation titled %@: \n\n Out of a possible %i points, %@ received a score of %i.", presName, presTitle, totPoints, presName, gotPoints];
         [mailer setMessageBody:emailBody isHTML:NO];
         mailer.modalPresentationStyle = UIModalPresentationPageSheet;
         [self presentViewController:mailer animated:YES completion:nil];
